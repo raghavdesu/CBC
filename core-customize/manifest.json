@@ -1,92 +1,248 @@
 {
-"commerceSuiteVersion": "1905.0",
+    "commerceSuiteVersion": "6.7.0.9",
+    "extensionPacks" : [
+        {
+            "name": "hybris-ta-suite",
+            "version": "5.0.0.1"
+        }
+    ],
     "extensions": [
-        "modeltacceleratorservices",
-        "electronicsstore",
-        "customerticketingaddon",
+        "admincockpit",
+        "cockpit",
+        "mcc",
+        "b2badmincockpit",
+        "commercesearch",
+        "commerceservices",
+        "basecommerce",
+        "payment",
+        "promotions",
+        "voucher",
+        "solrfacetsearch",
+        "solrserver",
+        "subscriptionservices",
+        "subscriptionfacades",
+        "commercefacades",
+        "ondemandcommon",
+        "b2bcommercefacades",
+        "b2bcommerce",
+        "backoffice",
+        "b2bcommercebackoffice",
+        "customersupportbackoffice",
+        "platformbackoffice",
+        "promotionenginebackoffice",
+        "rulebuilderbackoffice",
+        "solrfacetsearchbackoffice",
+        "xyformsbackoffice",
+        "droolsruleengineservices",
+        "promotionengineservices",
+        "couponservices",
+        "cms2",
+        "cms2lib",
+        "travelacceleratorstorefront",
+        "travelcheckout",
+        "traveladdon",
+        "travelcommons",
+        "accommodationaddon",
+        "travelcommerceorgaddon",
+        "travelstore",
+        "travelfacades",
+        "travelservices",
+        "travelrulesengine",
+        "travelfulfilmentprocess",
+        "travelb2bservices",
+        "travelb2bfacades",
+        "travelseatmapservices",
+        "travelcommercewebservices",
+        "travelcommercewebservicescommons",
+        "travelbackoffice",
+        "travelbackofficeservices",
+        "transportbackoffice",
+        "airlinebackoffice",
+        "accommodationbackoffice",
+        "hotelbackoffice",
+        "yaddon",
+        "yacceleratorcockpits",
         "yacceleratorstorefront",
-        "backoffice"
+        "yacceleratorcore",
+        "yacceleratorinitialdata",
+        "acceleratorservices",
+        "acceleratorfacades",
+        "acceleratorcms",
+        "acceleratorstorefrontcommons",
+        "b2bacceleratorservices",
+        "b2bacceleratorfacades",
+        "b2bapprovalprocessfacades",
+        "b2bapprovalprocess",
+        "addonsupport",
+        "assistedservicefacades",
+        "assistedservicestorefront",
+        "smartedit",
+        "cmswebservices",
+        "smarteditwebservices",
+        "permissionswebservices",
+        "smarteditaddon",
+        "cmssmartedit",
+        "previewwebservices",
+        "cmssmarteditwebservices",
+        "ndc171webservices",
+        "ndc171facades",
+        "ndcservices",
+        "ndcfulfilmentprocess",
+        "oauth2"
     ],
     "useConfig": {
-        "properties": [
-            {
-                "location": "config/local.properties"
-            },
-            {
-                "location": "config/local-dev.properties",
-                "persona": "development"
-            },
-            {
-                "location": "config/local-prod.properties",
-                "persona": "production"
-            },
-            {
-                "location": "config/local-backoffice-prod.properties",
-                "persona": "production",
-                "aspect": "backoffice"
-            },
-            {
-                "location": "config/local-backoffice.properties",
-                "aspect": "backoffice"
-            }
-        ],
-        "extensions": {
-            "location": "config/localextensions.xml",
-            "exclude": [
-                "custom_2_extension_without_dir",
-                "custom_1_extension_with_dir"
-            ]
-        },
         "solr": {
             "location": "[Solr custom folder]"
-        },
-        "languages" : {
-            "location": "_LANGUAGES_"
         }
-},
+    },
     "properties": [
         {
-            "key": "test.property.1",
-            "value": "test.property.1.value",
-            "persona": "production"
+            "key": "commerceservices.default.desktop.ui.experience",
+            "value": "responsive"
         },
         {
-            "key": "test.property.2",
-            "value": "test.property.2.value",
-            "persona": "development"
+            "key": "uiexperience.level.supported",
+            "value": "DESKTOP"
         },
         {
-            "key": "test.property.2",
-            "value": "test.property.2.value.in.prod.only",
-            "persona": "production"
+            "key": "hac.webroot",
+            "value": "/hac"
+        },
+        {
+            "key": "cronjob.trigger.interval",
+            "value": "30"
+        },
+        {
+            "key": "cronjob.timertask.loadonstartup",
+            "value": "true"
+        },
+        {
+            "key": "regioncache.stocklevelcacheregion.size",
+            "value": "20000"
+        },
+        {
+            "key": "regioncache.stocklevelcacheregion.evictionpolicy",
+            "value": "FIFO"
+        },
+        {
+            "key": "installed.tenants",
+            "value": ""
+        },
+        {
+            "key": "travelacc.sites",
+            "value": "travel"
+        },
+        {
+            "key": "solrserver.instances.default.ssl.enabled",
+            "value": "false"
+        },
+        {
+            "key": "solrserver.instances.default.ssl.keyStorePassword",
+            "value": ""
+        },
+        {
+            "key": "solrserver.instances.default.zk.prop.urlScheme",
+            "value": "http"
+        },
+        {
+            "key": "solrserver.instances.default.ssl.trustStorePassword",
+            "value": ""
+        },
+        {
+            "key": "task.polling.interval",
+            "value": "1"
+        },
+        {
+            "key": "task.polling.interval.min",
+            "value": "1"
+        },
+        {
+            "key": "website.travel.http",
+            "value": "<WEBSITE_TRAVEL_HTTP_URL>"
+        },
+        {
+            "key": "website.travel.https",
+            "value": "<WEBSITE_TRAVEL_HTTPS_URL>"
+        },
+        {
+            "key": "authentication.travel.http.url",
+            "value": "<AUTHENTICATION_TRAVEL_HTTP_URL>"
+        },
+        {
+            "key": "authentication.travel.https.url",
+            "value": "<AUTHENTICATION_TRAVEL_HTTPS_URL>"
+        },
+        {
+            "key": "authentication.travel.host",
+            "value": "<AUTHENTICATION_TRAVEL_HOST>"
+        },
+        {
+            "key": "applicationserver.http.port",
+            "value": "8081"
+        },
+        {
+            "key": "applicationserver.ssl.port",
+            "value": "8088"
+        },
+        {
+            "key": "ndcwebservices.xsdpath",
+            "value": "${HYBRIS_BIN_DIR}/ext-travel/ndc171facades/resources/ndc/xsds/"
+        },
+        {
+            "key": "travelseatmapservices.seat.svg.path",
+            "value": "${HYBRIS_BIN_DIR}/ext-travel/travelseatmapservices/resources/seatmap"
+        },
+        {
+            "key": "google.api.key",
+            "value": "<GOOGLE_API_KEY>"
         }
     ],
     "storefrontAddons": [
         {
-            "addon": "customerticketingaddon",
-            "storefront": "mycustomstorefront",
+            "addon": "travelacceleratorstorefront",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "travelcheckout",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "traveladdon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "accommodationaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "travelcommons",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "travelcommerceorgaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "assistedservicestorefront",
+            "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront"
         },
         {
             "addon": "smarteditaddon",
-            "storefront": "mycustomstorefront",
+            "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront"
         }
     ],
-     "aspects": [
+    "aspects": [
         {
             "name": "backoffice",
-            "properties": [
-				{
-                    "key": "test.property.1",
-                    "value": "test.property-1-value-prod-backoffice",
-                    "persona": "production"
-                },
-                {
-                    "key": "test.property.2",
-                    "value": "test.property-2-value-backoffice"
-                }
-            ],
+            "properties": [],
             "webapps": [
                 {
                     "name": "hac",
@@ -98,7 +254,11 @@
                 },
                 {
                     "name": "backoffice",
-                    "contextPath": ""
+                    "contextPath": "/backoffice"
+                },
+                {
+                    "name": "smartedit",
+                    "contextPath": "/smartedit"
                 }
             ]
         },
@@ -107,11 +267,11 @@
             "properties": [
                 {
                     "key": "spring.session.enabled",
-                    "value": "true"
+                    "value": "false"
                 },
                 {
                     "key": "spring.session.yacceleratorstorefront.save",
-                    "value":"async"
+                    "value": "async"
                 },
                 {
                     "key": "spring.session.yacceleratorstorefront.cookie.name",
@@ -122,8 +282,8 @@
                     "value": "/"
                 },
                 {
-                    "key":"storefrontContextRoot",
-                    "value":""
+                    "key": "storefrontContextRoot",
+                    "value": ""
                 }
             ],
             "webapps": [
@@ -132,12 +292,28 @@
                     "contextPath": "/medias"
                 },
                 {
-                    "name": "mycustomstorefront",
-                    "contextPath": ""
+                    "name": "yacceleratorstorefront",
+                    "contextPath": "/yacceleratorstorefront"
                 },
                 {
                     "name": "acceleratorservices",
                     "contextPath": "/acceleratorservices"
+                },
+                {
+                    "name": "travelcommercewebservices",
+                    "contextPath": "/travelcommercewebservices"
+                },
+                {
+                    "name": "ndc171webservices",
+                    "contextPath": "/ndc171webservices"
+                },
+                {
+                    "name": "oauth2",
+                    "contextPath": "/authorizationserver"
+                },
+                {
+                    "name": "travelseatmapservices",
+                    "contextPath": "/travelseatmapservices"
                 }
             ]
         },
@@ -153,42 +329,7 @@
                     "name": "mediaweb",
                     "contextPath": "/medias"
                 }
-        {
-            "name": "api",
-            "properties": [
-                    {
-                        "key":"xss.filter.header.X-Frame-Options",
-                        "value":""
-                    }
-            ],
-            "webapps": [
-                {
-                    "name": "ycommercewebservices",
-                    "contextPath": "/rest"
-                },
-                {
-                    "name": "oauth2",
-                    "contextPath": "/authorizationserver"
-                },
-                {
-                    "name": "cmswebservices",
-                    "contextPath": "/cmswebservices"
-                },
-                {
-                    "name": "permissionswebservices",
-                    "contextPath": "/permissionswebservices"
-                }
             ]
         }
-    ],
-    "tests": {
-        "extensions": ["customerticketingaddon",
-        "yacceleratorstorefront"],
-        "annotations": ["UnitTests", "IntegrationTests"],
-        "packages": ["de.hybris.infra.*"]
-    },
-    "webTests": {
-        "extensions": ["yacceleratorstorefront"],
-        "excludedPackages": ["de.hybris.platform.*"]
-    }
+    ]
 }
