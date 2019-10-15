@@ -1,335 +1,339 @@
 {
-    "commerceSuiteVersion": "6.7.0.9",
-    "extensionPacks" : [
-        {
-            "name": "hybris-ta-suite",
-            "version": "5.0.0.1"
-        }
-    ],
-    "extensions": [
-        "admincockpit",
-        "cockpit",
-        "mcc",
-        "b2badmincockpit",
-        "commercesearch",
-        "commerceservices",
-        "basecommerce",
-        "payment",
-        "promotions",
-        "voucher",
-        "solrfacetsearch",
-        "solrserver",
-        "subscriptionservices",
-        "subscriptionfacades",
-        "commercefacades",
-        "ondemandcommon",
-        "b2bcommercefacades",
-        "b2bcommerce",
-        "backoffice",
-        "b2bcommercebackoffice",
-        "customersupportbackoffice",
-        "platformbackoffice",
-        "promotionenginebackoffice",
-        "rulebuilderbackoffice",
-        "solrfacetsearchbackoffice",
-        "xyformsbackoffice",
-        "droolsruleengineservices",
-        "promotionengineservices",
-        "couponservices",
-        "cms2",
-        "cms2lib",
-        "travelacceleratorstorefront",
-        "travelcheckout",
-        "traveladdon",
-        "travelcommons",
-        "accommodationaddon",
-        "travelcommerceorgaddon",
-        "travelstore",
-        "travelfacades",
-        "travelservices",
-        "travelrulesengine",
-        "travelfulfilmentprocess",
-        "travelb2bservices",
-        "travelb2bfacades",
-        "travelseatmapservices",
-        "travelcommercewebservices",
-        "travelcommercewebservicescommons",
-        "travelbackoffice",
-        "travelbackofficeservices",
-        "transportbackoffice",
-        "airlinebackoffice",
-        "accommodationbackoffice",
-        "hotelbackoffice",
-        "yaddon",
-        "yacceleratorcockpits",
-        "yacceleratorstorefront",
-        "yacceleratorcore",
-        "yacceleratorinitialdata",
-        "acceleratorservices",
-        "acceleratorfacades",
-        "acceleratorcms",
-        "acceleratorstorefrontcommons",
-        "b2bacceleratorservices",
-        "b2bacceleratorfacades",
-        "b2bapprovalprocessfacades",
-        "b2bapprovalprocess",
-        "addonsupport",
-        "assistedservicefacades",
-        "assistedservicestorefront",
-        "smartedit",
-        "cmswebservices",
-        "smarteditwebservices",
-        "permissionswebservices",
-        "smarteditaddon",
-        "cmssmartedit",
-        "previewwebservices",
-        "cmssmarteditwebservices",
-        "ndc171webservices",
-        "ndc171facades",
-        "ndcservices",
-        "ndcfulfilmentprocess",
-        "oauth2"
-    ],
-    "useConfig": {
-        "solr": {
-            "location": "[Solr custom folder]"
-        }
+  "commerceSuiteVersion": "1905.0",
+  "extensions": [
+     "acceleratorcms",
+     "adaptivesearchbackoffice",
+     "addonsupport",
+     "b2ctelcobackoffice",
+     "b2ctelcofulfillmentprocess",
+     "b2ctelcostore",
+     "utilitiesstore",
+     "mediastore",
+     "b2ctelcoaddon",
+     "b2ctelcooccaddon",
+     "b2ctelcotmfwebservices",
+     "b2ctelcowebservices",
+     "commerceservicesbackoffice",
+     "solrfacetsearchbackoffice",
+     "solrserver",
+     "subscriptionbackoffice",
+     "yacceleratorstorefront",
+     "yacceleratorcore",
+     "ycommercewebservices",
+     "cmsbackoffice",
+     "cmswebservices",
+     "previewwebservices",
+     "smarteditwebservices",
+     "cmssmarteditwebservices",
+     "permissionswebservices",
+     "smarteditaddon",
+     "cmssmartedit",
+     "customerticketingaddon",
+     "customersupportbackoffice",
+     "personalizationwebservices",
+     "previewpersonalizationweb",
+     "personalizationcmsweb",
+     "personalizationsmartedit",
+     "personalizationservicesbackoffice",
+     "personalizationcmsbackoffice",
+     "personalizationservices",
+     "personalizationfacades",
+     "acceleratorservices",
+     "assistedservicefacades",
+     "assistedservicestorefront",
+     "assistedservicecustomerinterestsaddon",
+    "modeltacceleratorservices"
+  ],
+  "properties": [
+    {
+      "key": "impex.import.workers",
+      "value": "1"
     },
-    "properties": [
-        {
-            "key": "commerceservices.default.desktop.ui.experience",
-            "value": "responsive"
-        },
-        {
-            "key": "uiexperience.level.supported",
-            "value": "DESKTOP"
-        },
-        {
-            "key": "hac.webroot",
-            "value": "/hac"
-        },
-        {
-            "key": "cronjob.trigger.interval",
-            "value": "30"
-        },
-        {
-            "key": "cronjob.timertask.loadonstartup",
-            "value": "true"
-        },
-        {
-            "key": "regioncache.stocklevelcacheregion.size",
-            "value": "20000"
-        },
-        {
-            "key": "regioncache.stocklevelcacheregion.evictionpolicy",
-            "value": "FIFO"
-        },
-        {
-            "key": "installed.tenants",
-            "value": ""
-        },
-        {
-            "key": "travelacc.sites",
-            "value": "travel"
-        },
-        {
-            "key": "solrserver.instances.default.ssl.enabled",
-            "value": "false"
-        },
-        {
-            "key": "solrserver.instances.default.ssl.keyStorePassword",
-            "value": ""
-        },
-        {
-            "key": "solrserver.instances.default.zk.prop.urlScheme",
-            "value": "http"
-        },
-        {
-            "key": "solrserver.instances.default.ssl.trustStorePassword",
-            "value": ""
-        },
-        {
-            "key": "task.polling.interval",
-            "value": "1"
-        },
-        {
-            "key": "task.polling.interval.min",
-            "value": "1"
-        },
-        {
-            "key": "website.travel.http",
-            "value": "<WEBSITE_TRAVEL_HTTP_URL>"
-        },
-        {
-            "key": "website.travel.https",
-            "value": "<WEBSITE_TRAVEL_HTTPS_URL>"
-        },
-        {
-            "key": "authentication.travel.http.url",
-            "value": "<AUTHENTICATION_TRAVEL_HTTP_URL>"
-        },
-        {
-            "key": "authentication.travel.https.url",
-            "value": "<AUTHENTICATION_TRAVEL_HTTPS_URL>"
-        },
-        {
-            "key": "authentication.travel.host",
-            "value": "<AUTHENTICATION_TRAVEL_HOST>"
-        },
-        {
-            "key": "applicationserver.http.port",
-            "value": "8081"
-        },
-        {
-            "key": "applicationserver.ssl.port",
-            "value": "8088"
-        },
-        {
-            "key": "ndcwebservices.xsdpath",
-            "value": "${HYBRIS_BIN_DIR}/ext-travel/ndc171facades/resources/ndc/xsds/"
-        },
-        {
-            "key": "travelseatmapservices.seat.svg.path",
-            "value": "${HYBRIS_BIN_DIR}/ext-travel/travelseatmapservices/resources/seatmap"
-        },
-        {
-            "key": "google.api.key",
-            "value": "<GOOGLE_API_KEY>"
-        }
+	{
+      "key": "catalog.sync.workers",
+      "value": "1"
+    },
+    {
+      "key": "kernel.events.cluster.jgroups.channel",
+      "value": "disable"
+    },
+    {
+      "key": "datahub.publication.saveImpex",
+      "value": ""
+    },
+    {
+      "key": "kernel.autoInitMode",
+      "value": "update"
+    },
+    {
+      "key": "mail.from",
+      "value": "testmail9110@gmail.com"
+    },
+    {
+      "key": "mail.replyto",
+      "value": "testmail9110@gmail.com"
+    },
+    {
+      "key": "mail.smtp.server",
+      "value": "smtp.gmail.com"
+    },
+    {
+      "key": "mail.smtp.port",
+      "value": "587"
+    },
+    {
+      "key": "mail.smtp.user",
+      "value": "testmail9110@gmail.com"
+    },
+    {
+      "key": "mail.smtp.password",
+      "value": "PWD11111"
+    },
+    {
+      "key": "mail.smtp.starttls.enable",
+      "value": "true"
+    },
+    {
+      "key": "mail.use.tls",
+      "value": "true"
+    },
+    {
+      "key": "storefront.show.debug.info",
+      "value": "true"
+    },
+    {
+      "key": "commerceservices.default.desktop.ui.experience",
+      "value": "responsive"
+    },
+    {
+      "key": "googleEmbedApiKey",
+      "value": "AIzaSyD34TXbUsiyJnysJ-1Un657elxVy_OYpTs"
+    },
+    {
+      "key": "storefront.show.checkout.flows",
+      "value": "true"
+    },
+    {
+      "key" : "b2ctelcotmfwebservices.api.base.url",
+      "value" : "https://b2ctelco.cy8u-telcoacce1-s1-public.model-t.cc.commerce.ondemand.com"
+    },
+    {
+      "key":"website.b2ctelco.http",
+      "value":"http://b2ctelco.cy8u-telcoacce1-s1-public.model-t.cc.commerce.ondemand.com"
+    },
+    {
+      "key":"website.b2ctelco.https",
+      "value":"https://b2ctelco.cy8u-telcoacce1-s1-public.model-t.cc.commerce.ondemand.com"
+    },
+    {
+      "key":"website.media.http",
+      "value":"http://media.cy8u-telcoacce1-s1-public.model-t.cc.commerce.ondemand.com"
+    },
+    {
+      "key":"website.media.https",
+      "value":"https://media.cy8u-telcoacce1-s1-public.model-t.cc.commerce.ondemand.com"
+    },
+    {
+      "key":"website.utilities.http",
+      "value":"http://utilities.cy8u-telcoacce1-s1-public.model-t.cc.commerce.ondemand.com"
+    },
+    {
+      "key":"website.utilities.https",
+      "value":"https://utilities.cy8u-telcoacce1-s1-public.model-t.cc.commerce.ondemand.com"
+    }
+  ],
+  "storefrontAddons": [
+    {
+      "addon": "b2ctelcoaddon",
+      "storefront": "yacceleratorstorefront",
+      "template": "yacceleratorstorefront"
+    },
+    {
+      "addon": "smarteditaddon",
+      "storefront": "yacceleratorstorefront",
+      "template": "yacceleratorstorefront"
+    },
+    {
+      "addon": "assistedservicestorefront",
+      "storefront": "yacceleratorstorefront",
+      "template": "yacceleratorstorefront"
+    },
+    {
+      "addon": "assistedservicecustomerinterestsaddon",
+      "storefront": "yacceleratorstorefront",
+      "template": "yacceleratorstorefront"
+    },
+    {
+      "addon": "customerticketingaddon",
+      "storefront": "yacceleratorstorefront",
+      "template": "yacceleratorstorefront"
+    },
+	{
+	  "addon": "b2ctelcooccaddon",
+      "storefront": "ycommercewebservices",
+      "template": "ycommercewebservices"
+	}
+  ],
+  "tests": {
+    "extensions": [
+	"b2ctelcobackoffice",
+     "b2ctelcofulfillmentprocess",
+     "b2ctelcostore",
+     "utilitiesstore",
+     "mediastore",
+     "b2ctelcoaddon",
+     "b2ctelcotmfwebservices",
+     "b2ctelcowebservices"
     ],
-    "storefrontAddons": [
-        {
-            "addon": "travelacceleratorstorefront",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "travelcheckout",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "traveladdon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "accommodationaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "travelcommons",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "travelcommerceorgaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "assistedservicestorefront",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "smarteditaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        }
+    "annotations": [
+      "UnitTests",
+      "IntegrationTests"
     ],
-    "aspects": [
-        {
-            "name": "backoffice",
-            "properties": [],
-            "webapps": [
-                {
-                    "name": "hac",
-                    "contextPath": "/hac"
-                },
-                {
-                    "name": "mediaweb",
-                    "contextPath": "/medias"
-                },
-                {
-                    "name": "backoffice",
-                    "contextPath": "/backoffice"
-                },
-                {
-                    "name": "smartedit",
-                    "contextPath": "/smartedit"
-                }
-            ]
-        },
-        {
-            "name": "accstorefront",
-            "properties": [
-                {
-                    "key": "spring.session.enabled",
-                    "value": "false"
-                },
-                {
-                    "key": "spring.session.yacceleratorstorefront.save",
-                    "value": "async"
-                },
-                {
-                    "key": "spring.session.yacceleratorstorefront.cookie.name",
-                    "value": "JSESSIONID"
-                },
-                {
-                    "key": "spring.session.yacceleratorstorefront.cookie.path",
-                    "value": "/"
-                },
-                {
-                    "key": "storefrontContextRoot",
-                    "value": ""
-                }
-            ],
-            "webapps": [
-                {
-                    "name": "mediaweb",
-                    "contextPath": "/medias"
-                },
-                {
-                    "name": "yacceleratorstorefront",
-                    "contextPath": "/yacceleratorstorefront"
-                },
-                {
-                    "name": "acceleratorservices",
-                    "contextPath": "/acceleratorservices"
-                },
-                {
-                    "name": "travelcommercewebservices",
-                    "contextPath": "/travelcommercewebservices"
-                },
-                {
-                    "name": "ndc171webservices",
-                    "contextPath": "/ndc171webservices"
-                },
-                {
-                    "name": "oauth2",
-                    "contextPath": "/authorizationserver"
-                },
-                {
-                    "name": "travelseatmapservices",
-                    "contextPath": "/travelseatmapservices"
-                }
-            ]
-        },
-        {
-            "name": "backgroundProcessing",
-            "properties": [],
-            "webapps": [
-                {
-                    "name": "hac",
-                    "contextPath": ""
-                },
-                {
-                    "name": "mediaweb",
-                    "contextPath": "/medias"
-                }
-            ]
-        }
+    "packages": [
+      "de.hybris.platform.*"
     ]
+  },
+  "webTests": {
+    "extensions": [
+      "b2ctelcowebservices"
+    ],
+    "excludedPackages": [
+      "de.hybris.platform.*"
+    ]
+  },
+  "aspects": [
+    {
+      "name": "backoffice",
+      "properties": [
+        {
+          "key": "test.property.1",
+          "value": "test.property-1-value-prod-backoffice",
+          "persona": "production"
+        },
+        {
+          "key": "test.property.2",
+          "value": "test.property-2-value-backoffice"
+        }
+      ],
+      "webapps": [
+        {
+          "name": "hac",
+          "contextPath": "/hac"
+        },
+        {
+          "name": "mediaweb",
+          "contextPath": "/medias"
+        },
+        {
+          "name": "backoffice",
+          "contextPath": ""
+        }
+      ]
+    },
+    {
+      "name": "accstorefront",
+      "properties": [
+        {
+          "key": "spring.session.enabled",
+          "value": "false"
+        },
+        {
+          "key":"storefrontContextRoot",
+          "value":"/yacceleratorstorefront"
+        }
+      ],
+      "webapps": [
+        {
+          "name": "mediaweb",
+          "contextPath": "/medias"
+        },
+        {
+          "name": "yacceleratorstorefront",
+          "contextPath": ""
+        },
+        {
+          "name": "b2ctelcowebservices",
+          "contextPath": "/b2ctelcowebservices"
+        },
+        {
+          "name":"oauth2",
+          "contextPath" :"/authorizationserver"
+        },
+        {
+          "name": "acceleratorservices",
+          "contextPath": "/acceleratorservices"
+        },
+        {
+          "name": "smartedit",
+          "contextPath": "/smartedit"
+        },
+        {
+          "name": "cmssmartedit",
+          "contextPath": "/cmssmartedit"
+        },
+        {
+          "name": "cmssmarteditwebservices",
+          "contextPath": "/cmssmarteditwebservices"
+        },
+        {
+          "name": "smarteditwebservices",
+          "contextPath": "/smarteditwebservices"
+        },
+        {
+          "name": "cmscockpit",
+          "contextPath": "/cmscockpit"
+        },
+        {
+          "name": "cmswebservices",
+          "contextPath": "/cmswebservices"
+        },
+        {
+          "name": "cscockpit",
+          "contextPath": "/cscockpit"
+        },
+        {
+          "name": "maintenanceweb",
+          "contextPath": "/maintenance"
+        },
+        {
+          "name": "permissionswebservices",
+          "contextPath": "/permissionswebservices"
+        },
+        {
+          "name": "personalizationsmartedit",
+          "contextPath": "/personalizationsmartedit"
+        },
+        {
+          "name": "personalizationwebservices",
+          "contextPath": "/personalizationwebservices"
+        },
+        {
+          "name": "previewwebservices",
+          "contextPath": "/previewwebservices"
+        },
+        {
+          "name": "ycommercewebservices",
+          "contextPath": "/rest"
+        },
+        {
+          "name" : "b2ctelcotmfwebservices",
+          "contextPath" : "/b2ctelcotmfwebservices"
+        }
+      ]
+    },
+    {
+      "name": "backgroundProcessing",
+      "properties": [],
+      "webapps": [
+        {
+          "name": "hac",
+          "contextPath": ""
+        },
+        {
+          "name": "mediaweb",
+          "contextPath": "/medias"
+        }
+      ]
+    }
+  ]
 }
