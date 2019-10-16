@@ -1,5 +1,5 @@
 {
-  "commerceSuiteVersion": "1905.2",
+  "commerceSuiteVersion": "1905",
   "extensions": [
     "adaptivesearchsolr",
     "adaptivesearchbackoffice",
@@ -79,11 +79,6 @@
   ],
   "storefrontAddons": [
     {
-      "addon": "commerceorgaddon",
-      "storefront": "yacceleratorstorefront",
-      "template": "yacceleratorstorefront"
-    },
-    {
       "addon": "assistedservicestorefront",
       "storefront": "yacceleratorstorefront",
       "template": "yacceleratorstorefront"
@@ -92,11 +87,6 @@
       "addon": "smarteditaddon",
       "storefront": "yacceleratorstorefront",
       "template": "yacceleratorstorefront"
-    },
-    {
-      "addon": "commerceorgaddon",
-      "storefront": "yb2bacceleratorstorefront",
-      "template": "yb2bacceleratorstorefront"
     },
     {
       "addon": "assistedservicestorefront",
@@ -180,7 +170,7 @@
     },
     {
       "key": "default.session.timeout",
-      "value": "360"
+      "value": "3600"
     }
   ],
   "aspects": [
