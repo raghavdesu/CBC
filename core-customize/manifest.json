@@ -1,65 +1,90 @@
 {
   "commerceSuiteVersion": "1905.2",
   "extensions": [
-    "modeltacceleratorservices",
-    "xyformsbackoffice",
-    "xyformssamples",
-    "xyformsstorefrontcommons",
-    "xyformsweb",
     "adaptivesearchsolr",
     "adaptivesearchbackoffice",
-    "commerceservicesbackoffice",
+    "adaptivesearchsamplesaddon",
+    "b2bcommercebackoffice",
     "solrfacetsearchbackoffice",
-    "customersupportbackoffice",
-    "solrserver",
-    "yacceleratorcockpits",
+    "yacceleratorbackoffice",
     "yacceleratorinitialdata",
-    "yacceleratorfulfilmentprocess",
+    "yacceleratorordermanagement",
     "yacceleratorstorefront",
     "ycommercewebservices",
+    "apparelstore",
+    "electronicsstore",
+    "powertoolsstore",
+    "solrserver",
     "acceleratorwebservicesaddon",
+    "b2bacceleratoraddon",
+    "commerceorgaddon",
+    "commerceorgsamplesaddon",
+    "orderselfserviceaddon",
+    "rulebuilderbackoffice",
+    "couponbackoffice",
+    "droolsruleengineservices",
+    "couponfacades",
+    "couponservices",
+    "promotionenginesamplesaddon",
+    "textfieldconfiguratortemplatebackoffice",
+    "textfieldconfiguratortemplateaddon",
     "cmswebservices",
-    "previewwebservices",
     "smarteditwebservices",
-    "cmssmarteditwebservices",
     "permissionswebservices",
     "smarteditaddon",
     "cmssmartedit",
-    "cmsbackoffice",
-    "pcmbackoffice",
-    "backofficesolrsearch",
-    "configurablebundlecockpits",
+    "previewwebservices",
+    "cmssmarteditwebservices",
+    "cmsoccaddon",
+    "previewpersonalizationweb",
+    "personalizationcmsweb",
+    "personalizationsmartedit",
+    "personalizationsampledataaddon",
+    "personalizationpromotionssampledataaddon",
+    "personalizationpromotions",
+    "personalizationpromotionsweb",
+    "personalizationservicesbackoffice",
+    "personalizationpromotionsbackoffice",
+    "personalizationcmsbackoffice",
+    "pcmbackofficesamplesaddon",
     "assistedservicestorefront",
-    "financialb2baddon",
-    "financialb2bbackoffice",
-    "financialacceleratorstorefront",
-    "financialstore",
-    "financialsmartedit",
-    "financialoccaddon",
-    "financialwebservices",
-    "financialbackoffice",
-    "orbeonweb",
+    "assistedservicewebservices",
+    "customerticketingaddon",
+    "customersupportbackoffice",
+    "ticketsystembackoffice",
+    "consignmenttrackingbackoffice",
+    "ordermanagementaddon",
+    "consignmenttrackingaddon",
+    "warehousing",
+    "warehousingbackoffice",
+    "cisclient",
+    "cispayment",
+    "cissapdigitalpayment",
+    "ysapdpordermanagement",
+    "sapdigitalpaymentaddon",
+    "sapdigitalpaymentb2baddon",
+    "sapdigitalpaymentbackoffice",
+    "consignmenttrackingoccaddon",
+    "outboundservices",
     "odata2webservices",
+    "odata2webservicesfeaturetests",
+    "kymaintegrationbackoffice",
+    "yb2bacceleratorstorefront",
+    "acceleratorservices",
+    "commerceservicesbackoffice",
+    "backofficesolrsearch",
     "apiregistryservices",
     "integrationservices",
-    "commerceorgaddon",
-    "cmsoccaddon",
-    "notificationoccaddon",
     "integrationbackoffice"
-  ],
-  "extensionPacks": [
-    {
-      "artifact": "de.hybris.platform:hybris-fsa-suite:1907.1"
-    }
   ],
   "storefrontAddons": [
     {
-      "addon": "xyformsstorefrontcommons",
-      "storefront": "yacceleratorstorefront",
-      "template": "yacceleratorstorefront"
+      "addon": "acceleratorwebservicesaddon",
+      "storefront": "ycommercewebservices",
+      "template": "ycommercewebservices"
     },
     {
-      "addon": "financialacceleratorstorefront",
+      "addon": "commerceorgaddon",
       "storefront": "yacceleratorstorefront",
       "template": "yacceleratorstorefront"
     },
@@ -74,29 +99,24 @@
       "template": "yacceleratorstorefront"
     },
     {
-      "addon": "acceleratorwebservicesaddon",
-      "storefront": "ycommercewebservices",
-      "template": "ycommercewebservices"
-    },
-    {
-      "addon": "financialoccaddon",
-      "storefront": "ycommercewebservices",
-      "template": "ycommercewebservices"
-    },
-    {
-      "addon": "commerceorgaddon",
-      "storefront": "yacceleratorstorefront",
-      "template": "yacceleratorstorefront"
-    },
-    {
       "addon": "cmsoccaddon",
       "storefront": "ycommercewebservices",
       "template": "ycommercewebservices"
     },
     {
-      "addon": "financialb2baddon",
-      "storefront": "yacceleratorstorefront",
-      "template": "yacceleratorstorefront"
+      "addon": "commerceorgaddon",
+      "storefront": "yb2bacceleratorstorefront",
+      "template": "yb2bacceleratorstorefront"
+    },
+    {
+      "addon": "assistedservicestorefront",
+      "storefront": "yb2bacceleratorstorefront",
+      "template": "yb2bacceleratorstorefront"
+    },
+    {
+      "addon": "smarteditaddon",
+      "storefront": "yb2bacceleratorstorefront",
+      "template": "yb2bacceleratorstorefront"
     }
   ],
   "properties": [
@@ -111,34 +131,6 @@
     {
       "key": "googleApiKey",
       "value": ""
-    },
-    {
-      "key": "website.insurance.http",
-      "value": "<website_insurance_http_URL>"
-    },
-    {
-      "key": "website.insurance.https",
-      "value": "<website_insurance_https_URL>"
-    },
-    {
-      "key": "website.banking.http",
-      "value": "<website_banking_http_URL>"
-    },
-    {
-      "key": "website.banking.https",
-      "value": "<website_banking_https_URL>"
-    },
-    {
-      "key": "orbeonweb.orbeon.persistence.uri",
-      "value": "https://localhost:8088/xyformsweb/fr/service/hybris"
-    },
-    {
-      "key": "xyformsservices.orbeon.url.address",
-      "value": "http://localhost:8081/web-orbeon"
-    },
-    {
-      "key": "xyformsstorefrontcommons.orbeon.keystoreFile",
-      "value": "/opt/hybris/bin/platform/tomcat/lib/keystore"
     },
     {
       "key": "tomcat.http.port",
@@ -219,14 +211,6 @@
           "contextPath": "/backoffice"
         },
         {
-          "name": "orbeonweb",
-          "contextPath": "/web-orbeon"
-        },
-        {
-          "name": "xyformsweb",
-          "contextPath": "/xyformsweb"
-        },
-        {
           "name": "productcockpit",
           "contextPath": "/productcockpit"
         },
@@ -256,8 +240,24 @@
           "value": "/yacceleratorstorefront"
         },
         {
+          "key": "spring.session.yb2bacceleratorstorefront.save",
+          "value": "async"
+        },
+        {
+          "key": "spring.session.yb2bacceleratorstorefront.cookie.name",
+          "value": "JSESSIONID"
+        },
+        {
+          "key": "spring.session.yb2bacceleratorstorefront.cookie.path",
+          "value": "/yb2bacceleratorstorefront"
+        },
+        {
           "key": "storefrontContextRoot",
           "value": "yacceleratorstorefront"
+        },
+        {
+          "key": "storefrontContextRoot",
+          "value": "yb2bacceleratorstorefront"
         },
         {
           "key": "sop.post.url",
@@ -282,12 +282,8 @@
           "contextPath": "/yacceleratorstorefront"
         },
         {
-          "name": "orbeonweb",
-          "contextPath": "/web-orbeon"
-        },
-        {
-          "name": "xyformsweb",
-          "contextPath": "/xyformsweb"
+          "name": "yb2bacceleratorstorefront",
+          "contextPath": "/yb2bacceleratorstorefront"
         },
         {
           "name": "maintenanceweb",
@@ -312,14 +308,6 @@
         {
           "name": "cmswebservices",
           "contextPath": "/cmswebservices"
-        },
-        {
-          "name": "financialsmartedit",
-          "contextPath": "/financialsmartedit"
-        },
-        {
-          "name": "financialwebservices",
-          "contextPath": "/financialwebservices"
         },
         {
           "name": "oauth2",
