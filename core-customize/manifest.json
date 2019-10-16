@@ -374,7 +374,7 @@
     ],
     "tests": {
         "extensions": [
-            
+
         ],
         "annotations": ["UnitTests", "IntegrationTests"],
         "packages": ["de.hybris.platform.*"]
