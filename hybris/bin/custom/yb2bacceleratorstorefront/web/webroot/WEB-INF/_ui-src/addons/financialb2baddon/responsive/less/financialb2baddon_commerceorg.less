@@ -1,0 +1,162 @@
+.page-manageUsergroups, .page-manageUnits, .page-organizationManagement, .page-my-company, .page-organizationManagement  {
+  /********* Generall *******/
+  a, button {
+    color: @color-blue;
+  }
+
+  /********* Account Section *********/
+  .account-section {
+    .account-section-content {
+      form {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .disable-link a {
+        color: @color-dark-blue;
+      }
+      .enable-link a {
+        color: @color-blue;
+      }
+    }
+    .account-list .account-cards {
+      border-left: none;
+      &.card-select {
+        border-top: none;
+        border-left: none;
+      }
+      .selected {
+        background-color: @color-light-grey;
+        .glyphicon-ok {
+          color: @color-blue;
+        }
+      }
+      .card {
+        box-shadow: inset 0 0px 6px rgba(36, 37, 38, 0.2);
+        border-left: 1px solid @color-grey;
+        a {
+          color: @color-blue;
+        }
+      }
+      .glyphicon {
+        cursor: pointer;
+        color: @color-blue;
+        .transition;
+      }
+      .glyphicon-remove {
+        color: @color-grey;
+        &:hover {
+          color: @color-blue;
+        }
+      }
+      .glyphicon-ok {
+        color: @color-grey;
+      }
+      .assigned-products-container {
+        .glyphicon {
+          .glyphicon-minus;
+        }
+      }
+      .not-assigned-products-container {
+        .glyphicon {
+          .glyphicon-plus;
+        }
+      }
+    }
+    .account-list-header-add a {
+      color: @color-blue;
+    }
+    .account-section-header {
+      width: 100%;
+      text-align: left;
+      padding-left: 0;
+      padding-right: 0;
+      .container-lg.col-md-6 {
+        float: left;
+      }
+    }
+    .account-list .add-user-action-menu.open .add-user-action {
+      background-color: @color-blue;
+    }
+  }
+
+  /********* Breadcrumb *********/
+  .breadcrumb-section {
+    background: @color-light-grey;
+    .breadcrumb {
+      background: @color-light-grey;
+      .active {
+        color: @color-dark-blue;
+        font-weight: 600;
+      }
+    }
+  }
+
+  /********* Heading *********/
+  .back-link {
+    padding-left: 0;
+    padding-right: 0;
+    .label {
+      color: @color-dark-blue;
+    }
+  }
+  .add {
+    color: @color-blue;
+  }
+
+  /********* Pagination *********/
+  .pagination-bar {
+    &.bottom {
+      display: none;
+    }
+    .pagination-bar-results {
+      border-top: none;
+      color: @color-dark-blue;
+    }
+  }
+
+  /********* Tables *********/
+  .responsive-table-item {
+    .responsive-table-link {
+      color: @color-blue;
+      font-weight: 600;
+    }
+    &:last-child {
+      border-bottom: 1px solid @color-grey;
+    }
+  }
+  table th {
+    background-color: @color-blue;
+  }
+  table td {
+    color: @color-dark-grey;
+  }
+
+  /********* Forms *********/
+  label {
+    color: @color-dark-blue;
+  }
+  .form-control {
+    &:focus {
+      border-color: @color-blue;
+    }
+  }
+
+  /********* Well *********/
+  .well {
+    &.well-tertiary {
+      background:@color-light-grey;
+      border-top: 4px solid @color-dark-blue;
+    }
+    .item-label {
+      color: @color-dark-blue;
+      font-weight: 600;
+    }
+    .item-value {
+      color: @color-dark-grey;
+      a {
+        color: @color-blue;
+      }
+    }
+  }
+}
+

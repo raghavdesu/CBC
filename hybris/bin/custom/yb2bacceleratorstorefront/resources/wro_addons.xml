@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<groups xmlns="http://www.isdc.ro/wro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.isdc.ro/wro wro.xsd">
+   <group name="addons_responsive">
+      <js>/_ui/addons/assistedservicestorefront/responsive/common/js/assistedservicestorefront.js</js>
+      <js>/_ui/addons/assistedservicestorefront/responsive/common/js/jquery.tablesorter.pager.js</js>
+      <js>/_ui/addons/assistedservicestorefront/responsive/common/js/jquery.tablesorter.min.js</js>
+      <js>/_ui/addons/assistedservicestorefront/responsive/common/js/Chart.min.js</js>
+      <js>/_ui/addons/assistedservicestorefront/responsive/common/js/asm.storefinder.js</js>
+      <css>/_ui/addons/assistedservicestorefront/responsive/common/css/assistedservicestorefront.css</css>
+      <css>/_ui/addons/assistedservicestorefront/responsive/common/css/storeFinder.css</css>
+      <css>/_ui/addons/assistedservicestorefront/responsive/common/css/customer360.css</css>
+      <js>/_ui/addons/commerceorgaddon/responsive/common/js/commerceorgnavigation.js</js>
+      <js>/_ui/addons/commerceorgaddon/responsive/common/js/commerceorgaddon.js</js>
+      <js>/_ui/addons/commerceorgaddon/responsive/common/js/jquery.validate.js</js>
+      <js>/_ui/addons/smarteditaddon/shared/common/js/webApplicationInjector.js</js>
+      <js>/_ui/addons/smarteditaddon/shared/common/js/reprocessPage.js</js>
+      <js>/_ui/addons/smarteditaddon/shared/common/js/adjustComponentRenderingToSE.js</js>
+      <js>/_ui/addons/smarteditaddon/responsive/common/js/smarteditaddon.js</js>
+      <css>/_ui/addons/smarteditaddon/responsive/common/css/smarteditaddon.css</css>
+      <js>/_ui/addons/xyformsstorefrontcommons/responsive/common/js/xyformsstorefrontcommons.js</js>
+      <css>/_ui/addons/xyformsstorefrontcommons/responsive/common/css/xyformsstorefrontcommons.css</css>
+      <js>/_ui/addons/financialb2baddon/responsive/common/js/financialb2baddon.js</js>
+      <css>/_ui/addons/financialb2baddon/responsive/common/css/financialb2baddon.css</css>
+      <js>/_ui/addons/financialacceleratorstorefront/responsive/common/js/financialacceleratorstorefront.js</js>
+      <js>/_ui/addons/financialacceleratorstorefront/responsive/common/js/financialacceleratorstorefront_inbox.js</js>
+      <js>/_ui/addons/financialacceleratorstorefront/responsive/common/js/financialacceleratorstorefront_form.js</js>
+      <js>/_ui/addons/financialacceleratorstorefront/responsive/common/js/financialacceleratorstorefront_cart.js</js>
+      <js>/_ui/addons/financialacceleratorstorefront/responsive/common/js/financialacceleratorstorefront_banking.js</js>
+      <js>/_ui/addons/financialacceleratorstorefront/responsive/common/js/autocomplete.js</js>
+      <js>/_ui/addons/financialacceleratorstorefront/responsive/common/js/financialacceleratorstorefront_terms.js</js>
+      <js>/_ui/addons/financialacceleratorstorefront/responsive/common/js/acc.quotereview.js</js>
+      <js>/_ui/addons/financialacceleratorstorefront/responsive/common/js/acc.storefinder.js</js>
+   </group>
+</groups>
+

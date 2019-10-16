@@ -1,0 +1,1764 @@
+/*************************************************************/
+/********************** BANKING BEGIN ***********************/
+/***********************************************************/
+.banking {
+    &.page-homepage {
+        background-image: url(../../../addons/financialacceleratorstorefront/responsive/theme-alpha/images/landing_page_background.png);
+        background-size: 100%;
+    }
+	&.pageType-ContentPage header {
+		border-bottom: 1px solid @color-mild-grey;
+	}
+	header {
+		background: @color-white;
+	}
+	.heading-headline {
+		color: @color-banking-darker-blue;
+	}
+	.search-wrapper {
+		display: none;
+	}
+	.banking-products {
+		.mainWidth;
+		margin: 70px auto 50px;
+		.enriched-banner {
+			&__styled-text {
+				.banking-primary-btn-color;
+				.transition;
+				display: inline-block;
+				font-size: 18px;
+				line-height: 0;
+				padding: 25px 12px;
+				width: 60%;
+				height: 40px;
+				border: none;
+				font-weight: 400;
+				text-transform: uppercase;
+				text-overflow:ellipsis;
+				white-space:nowrap;	
+				overflow:hidden;
+			}
+		}
+		@media (max-width: @screen-lg) {
+			padding: 0 15px;
+		}
+		@media (max-width: @screen-xs-max) {
+			margin: 50px auto 30px;
+		}
+
+	}
+	/*************************************************************/
+	/********************** Mobile header ***********************/
+	/***********************************************************/
+	.branding-mobile {
+		@media (max-width: @screen-xs-max) {
+			& > div {
+				img {
+					max-width: 160px;
+				}
+			}	
+		}
+	}
+	/*************************************************************/
+	/******************** Mobile header end *********************/
+	/***********************************************************/
+	.text-background {
+		.mainWidth;
+		font-size: 30px;
+		font-weight: normal;
+		text-align: center;
+		background-color: @color-grey;
+		padding: 20px 10px;
+		margin: 0 auto;
+		&--smaller {
+			font-size: 24px;
+		}
+		@media (max-width: @screen-sm-max) {
+			font-size: 20px;
+			padding: 30px 0;
+		}
+		@media (max-width: @screen-xs-max) {
+			padding: 15px 30px;
+		}
+	}
+
+	.retrieve_applications {
+		&__link {
+			color: @color-blue;
+		}
+	}
+	/*************************************************************/
+	/************************ Navigation ************************/
+	/***********************************************************/
+	.desktop__nav .mobile-menu button {
+		color: @color-black;
+	}
+	&.offcanvas .desktop__nav .mobile-menu button {
+		color: @color-white;
+	}
+	.navigation--top .nav__right {
+		.nav__links--account {
+			.myAccountLinksHeader, & * {
+				&:hover, &:active, &:focus {
+					// Overriding !important from B2C
+					color: @color-banking-blue !important;
+				}
+			}
+			li {
+				.find-branch-link {
+					&:before {
+						margin-right: 5px;
+						display: inline-block;
+						top: 0;
+					}
+				}			
+			}
+		}
+	}
+	.navigation--bottom {
+		.sticky-nav-top {
+			overflow: hidden;
+			li {
+				@media (max-width: @screen-sm-max) {
+					background-color: @color-blue;
+				}
+			}
+		}
+		.nav__links--products li {
+			.find-branch-link {
+				&:before {
+					margin-right: 12px;
+					font-size: 20px;
+					vertical-align: sub;
+					top: 0;
+				}
+			}
+			@media (max-width: @screen-sm-max) {
+				background-color: @color-blue;
+				&.liUserSign, a {
+					&:hover {
+						background-color: @color-blue;
+					}
+				}
+			}
+		}
+		@media (max-width: @screen-sm-max) {
+			background-color: @color-blue;
+		}
+	}
+	
+    #accNavComponentDesktopOne, #accNavComponentDesktopTwo {
+        background-color: @color-banking-darker-blue;
+        ul.nav__links li {
+            border-right: 1px solid @color-white;
+            border-bottom: 1px solid @color-white;
+            a {
+                color: @color-white;
+            }
+            &:hover {
+                background-color: @color-banking-blue;
+            }
+        }
+    }
+	
+	
+	//LANGUAGE-CURRENCY SWITCHER
+	.language-currency {
+		padding-right: 0px;
+	}
+	.language/*, .currency*/ {
+		display: inline-block;
+		@media (max-width: @screen-sm-max) {
+			.form-group {
+				.form-control {
+					option {
+						background-color: @color-blue;
+					}
+				}
+			}
+		}
+		@media (max-width: @screen-xxs) {
+			display: block;
+		}
+	}
+	//LANGUAGE-CURRENCY SWITCHER END
+	/*************************************************************/
+	/********************** Navigation end **********************/
+	/***********************************************************/
+
+
+	/*************************************************************/
+	/******************** Banking Hero Banner *******************/
+	/***********************************************************/
+	.banking-banner {
+		.enriched-banner {
+			position: relative;
+			.responsive-image {
+				width: 100%;
+				display: block;
+			}
+			&__text{
+				position: absolute;
+				text-align: center;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				-webkit-transform: translate(-50%,-50%);
+			}
+			&__title {
+				font-size: 44px;
+				line-height: 1;
+				color: @color-white;
+				@media (max-width: @screen-sm-max) {
+					font-size: 5vw;
+				}
+			}
+			&__details {
+				display: block;
+				margin-top: 40px;
+			}
+			&__styled-text {
+				.banking-primary-btn-color;
+				.transition;
+				border: none;
+				display: inline-block;
+				font-size: 18px;
+				font-weight: 400;
+				height: 40px;
+				line-height: 0;
+				padding: 25px 12px;
+				text-transform: uppercase;
+				width: 70%;
+				text-overflow:ellipsis;
+				white-space:nowrap;	
+				overflow:hidden;
+				
+				@media (max-width: @screen-sm-min) {
+					font-size:  4vw;
+					height: auto;
+					line-height: 30px;
+					overflow: hidden;
+					padding: 8px 12px;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					width: 100%;
+					max-width: 300px;
+				}
+			}
+		}
+	}
+	/*************************************************************/
+	/******************* Banking Hero Banner end ****************/
+	/***********************************************************/
+
+	/*************************************************************/
+	/*************** Confirmation Hero Banner *******************/
+	/***********************************************************/
+	.confirmation-hero-banner {
+		.enriched-banner {
+			&__text {
+				position: absolute;
+				background: rgba(0, 113, 189, 0.7);
+				bottom: 0;
+				width: 100%;
+			}
+			&__title {
+				color: @color-white;
+				font-size: 44px;
+				font-weight: 600;
+				line-height: 1.5;
+				width: 100%;
+				@media (max-width: @screen-sm-max) {
+					font-size: 4vw;
+				}
+				@media (max-width: @screen-xs-max) {
+					font-size: 5vw;
+				}
+			}
+			&__details {
+				width: 100%;
+				padding: 6% 0;
+			}
+			&__styled-text {
+				color: @color-white;
+				font-size: 40px;
+				line-height: 1.5;
+				pointer-events: none;
+				@media (max-width: @screen-sm-max) {
+					font-size: 4vw;
+				}
+				@media (max-width: @screen-xs-max) {
+					font-size: 5vw;
+				}
+			}
+		}
+	}
+	/*************************************************************/
+	/************** Confirmation Hero Banner end ****************/
+	/***********************************************************/
+
+	/*************************************************************/
+	/******************* Banking Category Page ******************/
+	/***********************************************************/
+	.category-hero-banner {
+		.enriched-banner {
+			&__title {
+				color: @color-banking-darker-blue;
+				@media (max-width: @screen-xs) {
+					color: @color-body;
+				}
+			}
+			&__details {
+				@media (max-width: @screen-xs) {
+					margin-top: 30px;
+				}
+			}
+			&__styled-text {
+				.banking-primary-btn-color;
+			}
+			&__text {
+				@media (max-width: @screen-xs) {
+					background: transparent;
+					bottom: auto;
+					height: auto;
+					transform: translate(-50%, -50%);
+					-webkit-transform: translate(-50%, -50%);
+					left: 50%;
+					top: 50%;
+				}
+			}
+		}
+	}
+	.category-promotion {
+		&__column {
+			.box-shadow(0px; 0px; 60px; 2px; @color-grey; 100%);
+			border: 1px solid @color-banking-blue;
+			background-color: transparent;
+			@media (max-width: @screen-sm-max) {
+				display: flex;
+				flex-direction: column;
+				margin-bottom: 30px;
+			}
+		}
+	}
+	.category-title-promotion-banner {
+		.enriched-banner {
+			.box-shadow(0px; 0px; 60px; 2px; @color-grey; 100%);
+			background-color: @color-grey;
+			border: none;
+			&__styled-text {
+				.banking-secondary-btn-color;
+			}
+		}
+	}
+	.category-primary-promotion-banner {
+		.content {
+			padding: 15px 20px;
+			@media (min-width: @screen-md-min) {
+				min-height: 260px;
+			}
+		}
+		&:first-of-type {
+			padding-right: 10px;
+			@media (max-width: @screen-sm-max) {
+				order: 1;
+				padding-right: 0;
+			}
+		}
+		&:last-of-type {
+			padding-left: 10px;
+			@media (max-width: @screen-sm-max) {
+				padding-left: 0;
+				min-height: 100%;
+			}
+		}
+	}
+	.category-secondary-promotion-banner {
+		.enriched-banner {
+			&__title {
+				border-bottom: 3px solid @color-banking-blue;
+			}
+			.responsive-image {
+				width: 225px;
+			}
+			.image-wrapper {
+				max-width: 225px;
+			}
+		}
+	}
+	.product-feature {
+		&__wrapper {
+			.box-shadow(0px; 0px; 60px; 2px; @color-grey; 100%);
+			background-color: transparent;
+		}
+		&__details {
+			color: @color-banking-blue;
+		}
+	}
+	/*************************************************************/
+	/**************** Banking Category Page END *****************/
+	/***********************************************************/
+
+	/*****************************************************************/
+	/*********************** Checkout header ************************/
+	/***************************************************************/
+	.section-header {
+		&__wrapper {
+			.box-shadow(0px; 0px; 60px; 2px; @color-grey; 100%);
+			border: 1px solid @color-grey;
+		}
+		&__heading {
+			.section-header-background;
+		}
+	}
+	/*****************************************************************/
+	/******************** Checkout header end ***********************/
+	/***************************************************************/
+
+
+	/**************************************************/
+	/***************** Banking buttons  **************/
+	/************************************************/
+	.primary-button, .secondary-button {
+		&__default {
+			&--opacity {
+				opacity: 0.5;
+			}
+			&--opacity-disabled {
+				opacity: 0.2;
+			}
+		}
+	}
+	.primary-button {
+		&__default {
+			.banking-primary-btn-color;
+		}
+	}
+	.secondary-button {
+		&__default {
+			.banking-secondary-btn-color;
+		}
+	}
+	.btn-primary {
+		.banking-primary-btn-color;
+	}
+	.btn-default {
+		.banking-secondary-btn-color;
+	}
+	.xform-container {
+		&__buttons {
+			margin: 20px -10px;
+		}
+	}
+	/**************************************************/
+	/************* Banking buttons end  **************/
+	/************************************************/
+
+	
+	/*************************************************************/
+	/****************** Checkout progress bar *******************/
+	/***********************************************************/
+	.checkout-progress {
+		&__heading {
+			color: @color-banking-darker-blue;
+		}
+		&__step {
+			color: @color-banking-blue;
+			a {
+				color: @color-semi-dark-grey;
+				font-weight: 400;
+			}
+			&.disabled, &.unset {
+				color: @color-mild-grey;
+			}
+			&.active {
+				border-bottom:5px solid @color-banking-blue;
+				color: @color-grey;
+				a {
+					color: @color-dark-grey;
+					font-weight: 600;
+				}
+			}
+			@media (max-width: @screen-xs-max) {
+				width: 25%;
+			}
+		}
+	}
+	/*****************************************************************/
+	/****************** Checkout progress bar end *******************/
+	/***************************************************************/
+
+
+	/**************************************************/
+	/***** Cart (2nd checkout step) ADD OPTIONS ******/
+	/************************************************/
+	.cart-items-list {
+		&__wrapper {
+			.box-shadow(0px; 0px; 60px; 2px; @color-grey; 100%);
+			overflow:inherit;
+		}
+		&__product-name {
+			color: @color-semi-dark-grey;
+		}
+		&__item {
+			padding: 15px 25px 15px 15px;
+			&:nth-of-type(2n+1) {
+				background-color: @color-white;
+			}
+			@media (max-width: @screen-xs-max) {
+				padding: 15px;
+			}
+		}
+		&__button-row {
+			margin: 20px 25px 0 10px;
+			padding: 0 0 0 25px;
+			@media (max-width: @screen-xs-max) {
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+	/********* Cart Data *********/
+	.spinner {
+		&.spinner--desktop {
+			position: absolute;
+		}
+		&.spinner--mobile {
+			position: fixed;
+		}
+	}
+	.short-overview {
+		&__heading {
+			.linear-gradient-background (@color-banking-blue, @color-banking-darker-blue, 0%, 100%);
+		}
+		&__content {
+			.box-shadow(0px; 0px; 60px; 2px; @color-grey; 100%);
+			border: 1px solid @color-grey;
+			border-top: none;
+			background-color: @color-light-grey;
+		}
+		&__link-wrapper {
+			@media (max-width: @screen-sm-max) {
+				text-align: center;
+			}
+			.mean-link{
+				position: relative;
+				.glyphicon-edit;
+				&:before {
+					.glyphicon;
+					color: @color-banking-darker-blue;
+					float: right;
+					font-size: 18px;
+					top: 2px;
+					@media (max-width: @screen-sm-max) {
+						position: absolute;
+						right: -15px;
+						float: none;
+					}
+				}
+			}
+		}
+		&__items {
+			padding: 0;
+		}
+		&__item {
+			margin: 0;
+			padding: 20px 0;
+			&:nth-of-type(2n+1) {
+				background-color: @color-white;
+			}
+			&--highlighted {
+				background-color: @color-banking-darker-blue;
+				border: none;
+				line-height: 1;
+				font-weight: 700;
+				color: @color-white;
+				.short-overview__item-name{
+					color: @color-white;
+				}
+			}
+		}
+		&__item-name {
+			color: @color-semi-dark-grey;
+			&--white {
+				color: @color-white;
+				line-height: 1.2;
+			}
+		}
+		&__item-price {
+			font-weight: 700;
+		}
+	}
+	.mean-link {
+		&--bold {
+			color: @color-semi-dark-grey;
+			font-weight: 600;
+			line-height: 24px;
+			padding-right: 10px;
+		}
+		&:hover {
+			color: @color-banking-darker-blue;
+		}
+	}
+	/******************************************************/
+	/***** Cart (2nd checkout step) ADD OPTIONS END ******/
+	/****************************************************/
+
+	/************************************************************/
+	/********* Review information (5th checkout step)  *********/
+	/**********************************************************/
+	.accordion-header {
+		&__icon, &__details {
+			display: none;
+		}
+		&__text {
+			padding-left: 0;
+			width: 100%;
+		}
+	}
+	.accordion-item {
+		&__wrapper {
+			background: @color-light-grey;
+			border: 1px solid @color-grey;
+			border-bottom: none;
+		}
+		&__heading {
+			background: none;
+			color: @color-semi-dark-grey;
+			font-size: 20px;
+			font-weight: 600;
+			padding: 20px 40px 20px 80px;
+			height: auto;
+			line-height: 2;
+			display: block;
+			&:hover {
+				background-color: @color-light-grey;
+				color: @color-banking-blue;
+				.accordion-item__open:before {
+					.transition;
+					color: @color-banking-blue;
+				}
+			}
+			&:before {
+				.transition;
+				border: 1px solid transparent;
+				border-radius: 50%;
+				left: -46px;
+				padding: 6px 7px;
+				@media (max-width: @screen-xs-max) {
+					left: -25px;
+				}
+
+			}
+			&.active {
+				background-color: @color-light-grey;
+				color: @color-banking-blue;
+				.accordion-item__open:before {
+					color: @color-banking-blue;
+					.transition;
+					border-color: @color-banking-blue;
+					transform: rotateZ(180deg);
+				}
+				&:before {
+					.transition;
+					color: @color-banking-blue;
+					border-color: @color-banking-blue;
+				}
+			}
+			@media (max-width: @screen-xs-max) {
+				padding: 20px 60px 20px 30px;
+				font-size: 17px;
+			}
+		}
+		&__open {
+			display: initial;
+			padding: 16px 0;
+			&:before {
+				.transition;
+				border: 1px solid transparent;
+				border-radius: 50%;
+				color: @color-semi-dark-grey;
+				line-height: 1;
+				padding: 6px;
+				position: absolute;
+				top: 22px;
+				right: 35px;
+				@media (max-width: @screen-xs-max) {
+					left: 30px;
+					right: auto;
+				}
+			}
+		}
+		&__list {
+			list-style-type: disc;
+			margin-bottom: 0;
+			.accordion-item__list {
+				padding-left: 20px;
+			}
+		}
+		&__list-item {
+			color: @color-semi-dark-grey;
+			font-weight: 600;
+			&--title {
+				margin-bottom: 0;
+			}
+		}
+		&__button {
+			@media (max-width: @screen-xs-max) {
+				margin-top: 40px;
+			}
+		}
+	}
+	//
+	/****************************************************************/
+	/********* Review information end (5th checkout step)  *********/
+	/**************************************************************/
+
+
+	/******************************************************/
+	/*********** LEGAL (5TH checkout step) START *********/
+	/****************************************************/
+	.legal {
+		&__body {
+			padding: 30px 20px 40px;
+			max-width: 840px;
+			margin: 0 auto;
+			@media (max-width: @screen-xs-max) {
+				padding: 30px 10px 20px;
+			}
+			.legal__title, .legal__conditions-features, .legal__checkbox-wrapper {
+				overflow: hidden;
+				margin: 0 auto;
+			}
+            .content {
+                padding: 0;
+            }
+		}
+		&__title {
+			color: @color-dark-grey;
+			text-align: center;
+			line-height: 1.5;
+			font-size: 15px;
+			padding-top: 25px;
+			@media (max-width: @screen-xs-max) {
+				text-align: left;
+				padding: 0 10px;
+			}
+		}
+		&__conditions-features {
+			padding: 40px 80px;
+			@media (max-width: @screen-sm-mid) {
+				padding: 30px;
+			}
+			@media (max-width: @screen-sm-mid) {
+				padding: 30px 15px;
+			}
+		}
+		&__conditions, &__features {
+			border: 1px solid @color-banking-blue;
+			.box-shadow(0px; 0px; 40px; 2px; @color-grey; 100%);
+			@media (max-width: @screen-sm-mid) {
+			.box-shadow(0px; 0px; 15px; 2px; @color-grey; 100%);
+			}
+		}
+		&__conditions {
+			.legal__list {
+				list-style: disc;
+				color: @color-banking-dark-blue;
+				margin: 30px 20px 10px 40px;
+				@media (max-width: @screen-xs-max) {
+					margin: 20px 20px 10px 30px;
+				}
+				&-item {
+					line-height: 1.2;
+					padding-left: 10px;
+					padding-bottom: 20px;
+					@media (max-width: @screen-xs-max) {
+						padding-bottom: 10px;
+					}
+					&--document {
+						font-size: 14px;
+						font-weight: 600;
+						padding-bottom: 5px;
+						padding-top: 4px;
+						vertical-align: top;
+    					display: inline-block;
+						color: @color-dark-grey;
+						@media (max-width: @screen-xs-max) {
+							padding-left: 5px;
+						}
+					}
+				}
+			}
+		}
+		&__features {
+			height: 220px;
+			font-size: 14px;
+			border: 1px solid @color-banking-blue;
+			overflow-y: scroll;
+			overflow-x: hidden;
+			color: @color-dark-grey;
+			padding: 10px 20px;
+			margin-top: 40px;
+			-webkit-overflow-scrolling: touch;
+		}
+		&__checkbox-wrapper {
+			padding: 0 4%;
+			@media (max-width: @screen-sm-mid) {
+				padding: 30px;
+			}
+			@media (max-width: @screen-sm-mid) {
+				padding: 10px 15px 0;
+			}
+		}
+		&__checkbox-label {
+			display: block;
+			position: relative;
+			padding-left: 30px;
+			margin-bottom: 15px;
+			input {
+				display: none;
+				&:checked ~ .legal__checkbox-text {
+					color: @color-black;
+				}
+				&:checked ~ .legal__checkbox-text:before {
+					color: @color-banking-blue;
+					border-color: @color-banking-blue;
+				}
+			}
+		}
+		&__checkbox-text {
+			line-height: 1;
+			color: @color-grey;
+			cursor: pointer;
+			text-transform: none;
+			font-size: 15px;
+			.glyphicon-ok;
+			&:before {
+				.transition;
+				font-size: 11px;
+				position: absolute;
+				padding: 0 0 1px 1px;
+				top: 0;
+				left: 0;
+				height: 18px;
+				width: 18px;
+				line-height: 1.2;
+				border: 2px solid @color-grey;
+				border-radius: 3px;
+				font-family: 'Glyphicons Halflings', sans-serif;
+				color: transparent;
+			}
+		}
+	}
+	/******************************************************/
+	/*********** LEGAL (5TH checkout step) END ***********/
+	/****************************************************/
+
+
+	/*****************************************************************/
+	/*********** User Identification (6th checkout step)  ***********/
+	/***************************************************************/
+	.identification {
+		&__content {
+			padding: 80px;
+			@media (max-width: @screen-sm-max) {
+				padding: 80px 60px;
+			}
+			@media (max-width: @screen-xs-max) {
+				padding: 60px 40px;
+			}
+		}
+		&__cards {
+			margin-top: 60px;
+		}
+		&__card {
+			.box-shadow(0px; 0px; 60px; 2px; @color-grey; 100%);
+			.transition;
+			border: 1px solid @color-grey;
+			cursor: pointer;
+			display: inline-block;
+			margin-bottom: 0;
+			min-height: 150px;
+			padding: 65px 10px 35px;
+			width: 100%;
+		}
+		&__radio {
+			display: none;
+			&:checked + .identification__card {
+				border: 1px solid @color-banking-blue;
+				.identification__title {
+					color: @color-banking-blue;
+				}
+			}
+		}
+		&__icon {
+			height: 96px;
+			display: inline-block;
+			top: -48px;
+			position: absolute;
+			width: 100%;
+			left: 0;
+			&--first {
+				background: transparent url(../../../addons/financialacceleratorstorefront/responsive/theme-alpha/images/96_96px_nearest_branch_icon.svg) center top no-repeat;
+			}
+			&--second {
+				background:transparent url(../../../addons/financialacceleratorstorefront/responsive/theme-alpha/images/96_96px_legal_id_icon.svg) center top no-repeat;
+			}
+			&--third {
+				background:transparent url(../../../addons/financialacceleratorstorefront/responsive/theme-alpha/images/96_96px_web_id_icon.svg) center top no-repeat;
+			}
+		}
+		&__title {
+			color: @color-semi-dark-grey;
+			display: block;
+			font-size: 16px;
+			font-weight: 600;
+			text-align: center;
+			text-transform: none;
+		}
+		&--margin-top {
+			margin-top: 40px;
+		}
+	}
+
+	/*****************************************************************/
+	/********* User Identification (6th checkout step) end  *********/
+	/***************************************************************/
+
+	/**********************************************************/
+	/****************** Order confirmation  ******************/
+	/********************************************************/
+	.checkout-confirmation {
+		&__wrapper {
+			.box-shadow(0px; 0px; 60px; 2px; @color-grey; 100%);
+			border: 1px solid @color-banking-darker-blue;
+			display: block;
+			font-size: 20px;
+			line-height: 1.7;
+			margin: 80px auto 100px;
+			padding: 20px 40px;
+			text-align: center;
+			width: 67%;
+			max-width: 1400px;
+			@media (max-width: @screen-sm-max) {
+				width: 90%;
+			}
+			@media (max-width: @screen-xs-max) {
+				font-size: 16px;
+			}
+		}
+		&__app-id {
+			color: @color-banking-darker-blue;
+			font-weight: 600;
+			margin-top: 20px;
+				a[href^="tel:"] {
+				  color: @color-banking-darker-blue;
+				}
+		}
+	}
+	/**********************************************************/
+	/****************** Order confirmation end ***************/
+	/********************************************************/
+
+	/**********************************************************/
+	/****************** Order History  ******************/
+	/********************************************************/
+	#sortForm1, #sortForm2 {
+		.form-control{
+			&:focus{
+				border-color: @color-banking-dark-blue;
+			}
+		}
+	}
+	.account-overview-table {
+		border: none;
+		.orderhistory-list-table {
+			.section-header-background;
+		}
+		.box-shadow(0px 0px 60px 2px @color-grey);
+	}
+	.orderhistory-list-table.responsive-table tr.responsive-table-item {
+		&:last-child{
+			border-bottom: 1px solid @color-mild-grey;
+		}
+	}
+	.responsive-table {
+		& th:last-child{
+				text-align: right;
+		}
+		&-item td{
+			&:last-child {
+				text-align: right;
+			}
+		}
+	}
+	.pagination-wrap {
+		.pagination {
+			li {
+				a {
+					color: @color-banking-dark-blue;
+				}
+				&.pagination-prev, &.pagination-next {
+					a, span {
+						color: @color-banking-dark-blue;
+					}
+				}
+				&.active {
+					span {
+						background-color: @color-banking-dark-blue;
+					}
+				}
+			}
+		}
+	}
+	&.page-orders {
+		.account-section-content {
+			&.content-empty {
+				margin: 0 10px;
+				padding: 26px 0;
+				border-top: 1px solid #cccccc;
+				color: #333333;
+				text-align: left;
+				font-weight: 500;
+				font-size: 14px;
+			}
+		}
+	}
+	/**********************************************************/
+	/****************** Order History  end ******************/
+	/********************************************************/
+	
+	/*************************************************************/
+	/******************** Banking Products **********************/
+	/***********************************************************/
+	.banking-product {
+		margin-bottom: 20px;
+		.enriched-banner {
+			background-color: @color-white;
+			border: 1px solid @color-grey;
+			padding: 40px 20px;
+			.transition;
+			&:hover {
+				.box-shadow(0px; 0px; 10px; 0px; @color-blue; 100%);
+				border: 1px solid @color-blue;
+			}
+			.image-wrapper {
+				position: relative;
+				&:before, &:after {
+					content: "";
+					border-top: 3px solid @color-blue;
+					width: 40px;
+					height: 3px;
+					position: absolute;
+				}
+				&:before {
+					left: -20px;
+				}
+				&:after {
+					right: -20px;
+					top: 0;
+				}
+			}
+			.responsive-image {
+				max-width: 130px;
+				margin: 20px auto;
+			}
+			&__text{
+				position: relative;
+				top: auto;
+				left: auto;
+				-webkit-transform: none;
+				margin: 20px auto;
+				&:before, &:after {
+					content: "";
+					border-top: 3px solid @color-blue;
+					width: 40px;
+					height: 3px;
+					position: absolute;
+				}
+				&:before {
+					left: -20px;
+					bottom: 0;
+				}
+				&:after {
+					right: -20px;
+					bottom: 0;
+				}
+			}
+			&__title {
+				color: @color-blue;
+				font-size: 30px;
+				text-transform: uppercase;
+				display: inline-block;
+				min-height: 65px;
+			}
+			&__details {
+				margin-top: 20px;
+				.primary-button__slider {
+					&:hover {
+						transform: none;
+					}
+				}
+			}
+		}
+	}
+	/*************************************************************/
+	/******************** Banking Products END*******************/
+	/***********************************************************/
+
+	/**********************************************************/
+	/************** Banking My Applications  *****************/
+	/********************************************************/
+	.quote {
+		&.account-section-content__headline {
+			color: @color-banking-dark-blue;
+			padding-bottom: 30px;
+			border-bottom: 1px solid @color-grey;
+		}
+		&__wrapper {
+			.images__wrapper {
+				width:100px;
+			}
+			.warn {
+				color:@color-yellow;
+				font-weight: bold;
+			}
+			.notice {
+				color:@color-banking-dark-blue;
+				font-weight: bold;
+			}
+			.quote {
+				&__title {
+					background-color: @color-white;
+				}
+				&__details-wrapper {
+					.title {
+						color: @color-dark-grey;
+					}
+					.value {
+						font-weight: bold;
+						color: @color-banking-dark-blue;
+					}
+					& > div {
+						&:nth-of-type(even) {
+							background-color: @color-white;
+						}
+						&:nth-of-type(odd) {
+							background-color: @color-light-grey;
+						}
+					}
+				}
+			}
+		}
+	}
+	/**********************************************************/
+	/************ Banking My Applications end  ***************/
+	/********************************************************/
+
+	/*************************************************************/
+	/********************** Banking Footer **********************/
+	/***********************************************************/
+    footer {
+        background: radial-gradient(ellipse at center, @color-banking-blue 10%, @color-banking-darker-blue 80%, @color-banking-dark-blue 120%);
+		margin-top: 80px;
+        .container-fluid {
+			.mainWidth;
+            background-color: inherit;
+            border-top: none;
+            color: @color-white;
+            font-size: 14px;
+            font-weight: 600;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            @media (max-width: @screen-sm-max) {
+                padding-top: 0;
+				padding-bottom: 0;
+            }
+        }
+		@media (max-width: @screen-sm-max) {
+			padding: 20px 25px;
+		}
+    }
+    .footer {
+        &__top {
+            position: relative;
+            padding-bottom: 0;
+            .footer__nav--container {
+				margin-bottom: 10px;
+                .title {
+					font-size: 15px;
+					font-weight: 600;
+                    padding-bottom: 20px;
+					text-transform: uppercase;
+					@media (max-width: @screen-sm-max) {
+						padding: 20px 0;
+						text-align: left;
+						.glyphicon-menu-down;
+						&.active {
+							.glyphicon-menu-up;
+						}
+						&:before {
+							.glyphicon;
+							.transition;
+							float: right;
+							font-size: 15px;
+							left: -5px;
+						}
+                    }
+                }
+                .footer__nav--links {
+                    .footer__link {
+						a {
+							color: @color-white;
+							font-size: 12px;
+							font-weight: normal;
+							border-bottom: 1px solid transparent;
+							&.FSA-icon {
+								border-bottom: none;
+								font-size: 25px;
+								line-height: 1.7;
+							}
+							&:hover {
+								border-bottom: 1px solid @color-white;
+								padding-bottom: 3px;
+							}
+						}
+						@media (max-width: @screen-sm-max) {
+							margin: 0 0 10px;
+						}
+					}
+					@media (max-width: @screen-sm-max) {
+						display: none;
+						padding-bottom: 20px;
+						text-align: left;
+					}
+				}
+				&:first-of-type {
+					@media (max-width: @screen-sm-max) {
+						border-top: 1px solid @color-light-grey;
+					}
+				}
+				&:last-of-type {
+					.footer__nav--links {
+						.footer__link {
+							display: inline-block;
+							position: relative;
+							width: 33%;
+							a {
+								transition: all .2s ease-in-out;
+								float: left;
+								&:hover {
+									transform: scale(1.1);
+									border-bottom: none;
+									padding-bottom: 0;
+								}
+								@media (max-width: @screen-sm-max) {
+									float: none;
+								}
+							}
+							@media (max-width: @screen-sm-max) {
+								width: 40px;
+								margin-bottom: 0;
+							}
+						}
+						@media (max-width: @screen-sm-max) {
+							padding-bottom: 17px;
+						}
+					}
+				}
+				@media (max-width: @screen-sm-max) {
+					width: 100%;
+					border-bottom: 1px solid @color-light-grey;
+					padding: 0;
+					margin-bottom: 0;
+				}
+            }
+        }
+        &__right {
+            border-top: none;
+            padding-top: 0;
+            margin-top: 0;
+        }
+        &__left {
+            float: none;
+			padding: 0 15px;
+            width: 100%;
+			@media (max-width: @screen-sm-max) {
+				padding: 15px 0;
+				.row {
+					margin: 0;
+				}
+			}
+        }
+        &__copyright {
+			background: inherit;
+			border-top: 1px solid @color-light-grey;
+			color: @color-white;
+			font-size: 12px;
+			font-weight: normal;
+			padding-left: 10px;
+			padding-right: 10px;
+			text-align: left;
+            .container {
+				.mainWidth;
+                margin: 0 auto;
+				padding: 0;
+            }
+			@media (max-width: @screen-sm-max) {
+				border-top: none;
+				padding: 10px 0;
+			}
+        }
+        &--border {
+            border-bottom: 1px solid @color-light-grey;
+			@media (max-width: @screen-sm-max) {
+				border-bottom: none;
+			}
+        }
+    }
+	/*************************************************************/
+	/******************* Banking footer end *********************/
+	/***********************************************************/
+
+	/**********************************************************/
+	/************** Login and Register page  *****************/
+	/********************************************************/
+	.user-register, .login-page {
+		&__headline {
+			color: @color-banking-darker-blue;
+		}
+	}
+	#registerForm, #loginForm {
+		label {
+			color: @color-banking-darker-blue;
+		}
+        .form-control:focus {
+            border-color: @color-banking-blue;
+        }
+    }
+    #registerForm {
+        button {
+            .banking-secondary-btn-color;
+        }
+	}
+	#loginForm {
+		button {
+			.banking-primary-btn-color;
+		}
+	}
+	/**********************************************************/
+	/************ Login and Register page end  ***************/
+	/********************************************************/
+	/**********************************************************/
+	/************* Terms and conditions start  ***************/
+	/********************************************************/
+	&.page-termsAndConditions {
+		.title_holder {
+			.title {
+				color: @color-banking-darker-blue;
+			}
+		}
+		.item_container {
+			.title {
+				border-left: 5px solid @color-banking-dark-blue;
+			}
+			.pagetop-link {
+				color: @color-banking-darker-blue;
+			}
+		}
+	}
+	/************** Terms and conditions popup  ****************/
+	#colorbox {
+		.item_container {
+			.pagetop-link {
+				color: @color-banking-dark-blue;
+			}
+		}	
+	}
+	/************ Terms and conditions popup  end **************/
+	/**********************************************************/
+	/************** Terms and conditions end  ****************/
+	/********************************************************/
+
+	/**********************************************************/
+	/****************** My account section  ******************/
+	/********************************************************/
+	.account-section {
+		.account-section-content {
+			.account-section-header {
+				color: @color-banking-darker-blue;
+				.row {
+					.container-lg {
+						&.col-md-6 {
+							color: @color-banking-darker-blue;
+						}
+					}
+				}
+			}
+		}
+	}
+	/**********************************************************/
+	/***************** My account section end  ***************/
+	/********************************************************/
+
+
+	/**********************************************************/
+	/*********** Profile, Email and Password forms  **********/
+	/********************************************************/
+	#updateProfileForm, #updateEmailForm, #updatePasswordForm, #updatePwdForm {
+		.accountActions, .login-form-action {
+			button {
+				&.backToHome {
+					.banking-secondary-btn-color;
+				}
+				.banking-primary-btn-color;
+			}
+		}
+		.form-group  {
+			.control-label {
+				color: @color-banking-darker-blue;
+			}
+			.form-control {
+				&:focus {
+					border-color: @color-banking-blue;
+				}
+			}
+		}
+	}
+	/**********************************************************/
+	/********** Profile, Email and Password forms end ********/
+	/********************************************************/
+
+	/**********************************************************/
+	/******************* Forgotten password  *****************/
+	/********************************************************/
+	.forgotten-password {
+		a {
+			color:@color-banking-darker-blue;
+		}
+		#forgottenPwdForm {
+			.form-group {
+				.form-control {
+					&:focus {
+						border-color: @color-banking-blue;
+					}
+				}
+			}
+			.control-label {
+				color: @color-banking-darker-blue;
+			}
+			button {
+				.banking-primary-btn-color;
+			}
+		}
+	}
+	/**********************************************************/
+	/****************** Forgotten password end ***************/
+	/********************************************************/
+
+	/**********************************************************/
+	/************************ Colorbox  **********************/
+	/********************************************************/
+	#colorbox #cboxWrapper #cboxContent #cboxLoadedContent .account-address-removal-popup {
+		.modal-actions {
+			button.paymentsDeleteBtn {
+				.banking-primary-btn-color;
+			}
+			a.paymentsDeleteBtn {
+				.banking-secondary-btn-color;
+			}
+		}
+	}
+	#colorbox #cboxWrapper #cboxContent #cboxLoadedContent .forgotten-password {
+		#forgottenPwdForm {
+			button {
+				.banking-primary-btn-color;
+			}
+			.control-label {
+				color: @color-banking-darker-blue;
+			}
+		}
+	}
+	#colorbox #cboxWrapper #cboxContent #cboxClose {
+		.glyphicon-remove {
+			color: @color-banking-blue;
+			border: 3px solid @color-banking-blue;
+		}
+		&:hover { //workaround for Firefox
+			.glyphicon-remove {
+				color: @color-banking-darker-blue;
+				border: 3px solid @color-banking-darker-blue;
+			}
+		}
+	}
+	#colorbox #cboxWrapper #cboxContent #cboxTitle {
+		.headline-text {
+			color: @color-banking-darker-blue;
+		}
+	}
+	/**********************************************************/
+	/******************** Colorbox end  **********************/
+	/********************************************************/
+	.spinner {
+		display: none;
+		pointer-events: none;
+		background-color: @color-white;
+		opacity: 0.8;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		&:before {
+			display: block;
+			content: "";
+			border: 5px solid rgba(0, 174, 239, .15);
+			border-top-color: rgba(0, 174, 239, .8);
+			border-radius: 100%;
+			height: 60px;
+			left: calc(~"50% - 30px");
+			top: 50%;
+			width: 60px;
+			position: relative;
+			-webkit-animation: rotate .6s infinite linear;
+			-moz-animation: rotate .6s infinite linear;
+			-o-animation: rotate .6s infinite linear;
+			animation: rotate .6s infinite linear;
+		}
+	}
+
+	/*************************************************************/
+	/********************Bank Account Overview Start*************/
+	/***********************************************************/
+	
+	.images__wrapper {
+		background-color: transparent;
+		width: 70px;
+		height: auto;
+		padding: 0;
+	}
+	.bank-account {
+		&__wrapper {
+			.transition;
+			border: 1px solid @color-grey;
+			border-bottom: none;
+			border-radius: 15px 15px 0 0;
+			text-align: center;
+			margin: 40px auto 20px;
+		}
+		&__title {
+			&:extend(.banking .images__wrapper);
+			width:auto;
+			font-size: 24px;
+			font-weight: 700;
+			color: @color-banking-darker-blue;
+			background-color: @color-white;
+			border-bottom: 4px solid @color-banking-darker-blue;
+			border-radius: 15px 15px 0 0;
+			padding: 20px 0;
+			> * {
+				margin-top: 15px;
+			}
+		}
+		&__caption {
+			color: @color-banking-darker-blue;
+			font-weight: bold;
+		}
+		
+		&__details-wrapper {
+			> div {  
+				padding: 20px 0;
+				min-height: 80px;
+				color: @color-dark-grey;
+				font-size: 14px;
+				font-weight: 700;
+				&:nth-of-type(odd){
+					background-color: @color-light-grey;	
+				}
+				&:nth-of-type(even){
+					background-color: @color-white;
+				}
+			}
+		}
+	
+		&__details-value {
+			color: @color-banking-darker-blue;
+			font-size: 14px;
+			font-weight: 400;
+		}
+	
+		&__button {
+			max-width: 640px;
+			margin: 0 auto;
+			padding: 40px;
+			background-color: @color-light-grey;
+			border-bottom: 1px solid @color-banking-darker-blue;
+			border-top: 1px solid @color-banking-darker-blue;
+		}
+	}
+	
+	.primary-button {
+		&__bank-account {
+			display: inline-block;
+			font-size: 12px;
+			padding: 14px;
+			max-width: 180px;
+			text-overflow:ellipsis;
+			white-space:nowrap;	
+			overflow:hidden;
+		}
+	
+	}
+	
+	.account-overview-accordion {
+		&-header {
+			&__wrapper {
+				background: -webkit-linear-gradient(left, @color-white 0%, @color-white 100%);
+				background: -o-linear-gradient(left, @color-white 0%, @color-white 100%);
+				background: linear-gradient(to right, @color-white 0%, @color-white 100%);
+				border-bottom: 1px solid @color-grey;
+				padding: 20px 0;
+				margin-bottom: 30px;
+			}
+	
+			&__text {
+				text-align: left;
+				color: @color-banking-darker-blue;
+				font-weight: 700;
+				font-size: 24px;
+				line-height: 1;
+				width: 100%;
+				@media (min-width: @screen-sm-min) {
+					text-align: left;
+				}
+				@media (max-width: @screen-xs-max) {
+					text-align: left;
+					color: @color-banking-darker-blue;
+					font-weight: 700;
+					font-size: 24px;
+				}
+			}
+		}		
+	
+		&-item__wrapper {
+			background: @color-light-grey;
+		    border-right: 1px solid @color-grey;
+		    border-left: 1px solid @color-grey;
+		    border-top: 1px solid @color-grey;
+			padding: inherit;
+		}
+		
+		&-item:nth-last-child(1){
+			.account-overview-accordion-item__wrapper {
+				border-bottom: 1px solid @color-grey;
+			}
+		}
+
+		&-item--valid {
+			cursor: pointer;
+			background: none;
+			color: @color-semi-dark-grey;
+			font-size: 20px;
+			font-weight: 600;
+			padding: 20px 40px 20px 80px;
+			@media (max-width: @screen-xs-max) {
+				padding: 20px 50px 20px 30px;
+			}
+			@media (max-width: @screen-sm-max) {
+				padding: 20px 50px 20px 30px;
+			}
+			height: auto;
+			display: block;
+			margin-top: 10px;
+			&:hover {
+				background-color: @color-light-grey;
+				color: @color-banking-blue;
+				.account-overview-accordion-item--open:before {
+					.transition;
+					color: @color-banking-blue;
+				}
+			}
+			&:before {
+				.transition;
+				font-family: 'Glyphicons Halflings', sans-serif;
+			    font-size: 16px;
+			    position: relative;
+			    left: -40px;
+				border: 1px solid transparent;
+				border-radius: 50%;
+				padding: 6px 7px;
+				@media (max-width: @screen-xs-max) {
+					left: -25px;
+				}
+				@media (max-width: @screen-sm-max) {
+					left: -15px;
+				}
+
+			}
+			&.active {
+				background-color: @color-light-grey;
+				color: @color-banking-blue;
+				.account-overview-accordion-item--open:before {
+					color: @color-banking-blue;
+					.transition;
+					border-color: @color-banking-blue;
+					transform: rotateZ(180deg);
+				}
+				&:before {
+					.transition;
+					color: @color-banking-blue;
+					border-color: @color-banking-blue;
+				}
+			}
+		}
+		
+		&-item--valid {
+			.glyphicon-ok;
+		}
+		
+		&-item--open {
+			cursor: pointer;
+			display: block;
+			padding: 0 20px;
+			top: 0;
+			right: 0;
+			position: absolute;
+			text-align: center;
+			.glyphicon-menu-down;
+			&:before {
+				.glyphicon;
+				.transition;
+				float: right;
+				line-height: 1;
+				top: 25px;
+				right:20px;
+			    padding: 6px;
+			    border: 1px solid transparent;
+			    border-radius: 50%;
+			}
+		}
+		
+		&-item__body {
+			padding: 30px 46px 20px;
+			background: @color-white;
+			overflow: hidden;
+			display: none;
+			&.opened {
+				display: block;
+			}
+			@media (max-width: @screen-xs-max) {
+				padding: 25px 0 20px;
+			}
+		}
+		
+	}
+}
+	
+	/*************************************************************/
+	/********************Bank Account Overview End***************/
+	/***********************************************************/
+
+/*************************************************************/
+/*********************** BANKING END ************************/
+/***********************************************************/
