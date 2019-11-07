@@ -1,344 +1,425 @@
 {
-  "commerceSuiteVersion": "1905",
-  "extensions": [
-    "adaptivesearchsolr",
-    "adaptivesearchbackoffice",
-    "adaptivesearchsamplesaddon",
-    "b2bcommercebackoffice",
-    "solrfacetsearchbackoffice",
-    "yacceleratorbackoffice",
-    "yacceleratorinitialdata",
-    "yacceleratorordermanagement",
-    "yacceleratorstorefront",
-    "ycommercewebservices",
-    "apparelstore",
-    "electronicsstore",
-    "powertoolsstore",
-    "solrserver",
-    "acceleratorwebservicesaddon",
-    "b2bacceleratoraddon",
-    "commerceorgaddon",
-    "commerceorgsamplesaddon",
-    "orderselfserviceaddon",
-    "rulebuilderbackoffice",
-    "couponbackoffice",
-    "droolsruleengineservices",
-    "couponfacades",
-    "couponservices",
-    "promotionenginesamplesaddon",
-    "textfieldconfiguratortemplatebackoffice",
-    "textfieldconfiguratortemplateaddon",
-    "cmswebservices",
-    "smarteditwebservices",
-    "permissionswebservices",
-    "smarteditaddon",
-    "cmssmartedit",
-    "previewwebservices",
-    "cmssmarteditwebservices",
-    "cmsoccaddon",
-    "previewpersonalizationweb",
-    "personalizationcmsweb",
-    "personalizationsmartedit",
-    "personalizationsampledataaddon",
-    "personalizationpromotionssampledataaddon",
-    "personalizationpromotions",
-    "personalizationpromotionsweb",
-    "personalizationservicesbackoffice",
-    "personalizationpromotionsbackoffice",
-    "personalizationcmsbackoffice",
-    "pcmbackofficesamplesaddon",
-    "assistedservicestorefront",
-    "assistedservicewebservices",
-    "customerticketingaddon",
-    "customersupportbackoffice",
-    "ticketsystembackoffice",
-    "consignmenttrackingbackoffice",
-    "ordermanagementaddon",
-    "consignmenttrackingaddon",
-    "warehousing",
-    "warehousingbackoffice",
-    "cisclient",
-    "cispayment",
-    "cissapdigitalpayment",
-    "ysapdpordermanagement",
-    "sapdigitalpaymentaddon",
-    "sapdigitalpaymentb2baddon",
-    "sapdigitalpaymentbackoffice",
-    "consignmenttrackingoccaddon",
-    "outboundservices",
-    "odata2webservices",
-    "odata2webservicesfeaturetests",
-    "kymaintegrationbackoffice",
-    "yb2bacceleratorstorefront",
-    "acceleratorservices",
-    "commerceservicesbackoffice",
-    "backofficesolrsearch",
-    "apiregistryservices",
-    "integrationservices",
-    "integrationbackoffice",
-    "npmtestancillary"
-  ],
-  "storefrontAddons": [
-    {
-      "addon": "assistedservicestorefront",
-      "storefront": "yacceleratorstorefront",
-      "template": "yacceleratorstorefront"
-    },
-    {
-      "addon": "smarteditaddon",
-      "storefront": "yacceleratorstorefront",
-      "template": "yacceleratorstorefront"
-    },
-    {
-      "addon": "assistedservicestorefront",
-      "storefront": "yb2bacceleratorstorefront",
-      "template": "yb2bacceleratorstorefront"
-    },
-    {
-      "addon": "smarteditaddon",
-      "storefront": "yb2bacceleratorstorefront",
-      "template": "yb2bacceleratorstorefront"
-    }
-  ],
-  "properties": [
-    {
-      "key": "storefront.show.debug.info",
-      "value": "false"
-    },
-    {
-      "key": "promotions.legacy.mode",
-      "value": "true"
-    },
-    {
-      "key": "googleApiKey",
-      "value": ""
-    },
-    {
-      "key": "tomcat.http.port",
-      "value": "8081"
-    },
-    {
-      "key": "tomcat.https.port",
-      "value": "8088"
-    },
-    {
-      "key": "tomcat.ssl.port",
-      "value": "8088"
-    },
-    {
-      "key": "corsfilter.default.allowedOrigins",
-      "value": "https://localhost:8088"
-    },
-    {
-      "key": "emailservice.send.enabled",
-      "value": "true"
-    },
-    {
-      "key": "mail.smtp.server",
-      "value": "<your_mail_smtp_sever>"
-    },
-    {
-      "key": "mail.smtp.auth",
-      "value": "true"
-    },
-    {
-      "key": "mail.smtp.sendpartial",
-      "value": "true"
-    },
-    {
-      "key": "mail.smtp.password",
-      "value": "<your_password>"
-    },
-    {
-      "key": "mail.smtp.socketFactory.class",
-      "value": "javax.net.ssl.SSLSocketFactory"
-    },
-    {
-      "key": "mail.smtp.user",
-      "value": "<your_email>"
-    },
-    {
-      "key": "mail.smtp.port",
-      "value": "<your_port>"
-    },
-    {
-      "key": "mail.use.tls",
-      "value": "true"
-    },
-    {
-      "key": "mail.replyto",
-      "value": "<your_email>"
-    },
-    {
-      "key": "default.session.timeout",
-      "value": "3600"
-    }
-  ],
-  "aspects": [
-    {
-      "name": "backoffice",
-      "properties": [],
-      "webapps": [
-        {
-          "name": "hac",
-          "contextPath": "/hac"
-        },
-        {
-          "name": "mediaweb",
-          "contextPath": "/medias"
-        },
-        {
-          "name": "backoffice",
-          "contextPath": "/backoffice"
-        },
-        {
-          "name": "productcockpit",
-          "contextPath": "/productcockpit"
-        },
-        {
-          "name": "cmscockpit",
-          "contextPath": "/cmscockpit"
-        }
-      ]
-    },
-    {
-      "name": "accstorefront",
-      "properties": [
-        {
-          "key": "spring.session.enabled",
-          "value": "true"
-        },
-        {
-          "key": "spring.session.yacceleratorstorefront.save",
-          "value": "async"
-        },
-        {
-          "key": "spring.session.yacceleratorstorefront.cookie.name",
-          "value": "JSESSIONID"
-        },
-        {
-          "key": "spring.session.yacceleratorstorefront.cookie.path",
-          "value": "/yacceleratorstorefront"
-        },
-        {
-          "key": "spring.session.yb2bacceleratorstorefront.save",
-          "value": "async"
-        },
-        {
-          "key": "spring.session.yb2bacceleratorstorefront.cookie.name",
-          "value": "JSESSIONID"
-        },
-        {
-          "key": "spring.session.yb2bacceleratorstorefront.cookie.path",
-          "value": "/yb2bacceleratorstorefront"
-        },
-        {
-          "key": "storefrontContextRoot",
-          "value": "yacceleratorstorefront"
-        },
-        {
-          "key": "storefrontContextRoot",
-          "value": "yb2bacceleratorstorefront"
-        },
-        {
-          "key": "sop.post.url",
-          "value": "/acceleratorservices/sop-mock/process"
-        },
-        {
-          "key": "xss.filter.header.X-Frame-Options",
-          "value": ""
-        }
+   "commerceSuiteVersion":"1905",
+   "extensions":[
+      "adaptivesearchsolr",
+      "adaptivesearchbackoffice",
+      "adaptivesearchsamplesaddon",
+      "b2bcommercebackoffice",
+      "solrfacetsearchbackoffice",
+      "yacceleratorbackoffice",
+      "yacceleratorinitialdata",
+      "yacceleratorordermanagement",
+      "yacceleratorstorefront",
+      "ycommercewebservices",
+      "apparelstore",
+      "electronicsstore",
+      "powertoolsstore",
+      "solrserver",
+      "acceleratorwebservicesaddon",
+      "b2bacceleratoraddon",
+      "commerceorgaddon",
+      "commerceorgsamplesaddon",
+      "orderselfserviceaddon",
+      "rulebuilderbackoffice",
+      "couponbackoffice",
+      "droolsruleengineservices",
+      "couponfacades",
+      "couponservices",
+      "promotionenginesamplesaddon",
+      "textfieldconfiguratortemplatebackoffice",
+      "textfieldconfiguratortemplateaddon",
+      "cmswebservices",
+      "smarteditwebservices",
+      "permissionswebservices",
+      "smarteditaddon",
+      "cmssmartedit",
+      "previewwebservices",
+      "cmssmarteditwebservices",
+      "cmsoccaddon",
+      "previewpersonalizationweb",
+      "personalizationcmsweb",
+      "personalizationsmartedit",
+      "personalizationsampledataaddon",
+      "personalizationpromotionssampledataaddon",
+      "personalizationpromotions",
+      "personalizationpromotionsweb",
+      "personalizationservicesbackoffice",
+      "personalizationpromotionsbackoffice",
+      "personalizationcmsbackoffice",
+      "pcmbackofficesamplesaddon",
+      "assistedservicestorefront",
+      "assistedservicewebservices",
+      "customerticketingaddon",
+      "customersupportbackoffice",
+      "ticketsystembackoffice",
+      "consignmenttrackingbackoffice",
+      "ordermanagementaddon",
+      "consignmenttrackingaddon",
+      "warehousing",
+      "warehousingbackoffice",
+      "cisclient",
+      "cispayment",
+      "cissapdigitalpayment",
+      "ysapdpordermanagement",
+      "sapdigitalpaymentaddon",
+      "sapdigitalpaymentb2baddon",
+      "sapdigitalpaymentbackoffice",
+      "consignmenttrackingoccaddon",
+      "outboundservices",
+      "odata2webservices",
+      "odata2webservicesfeaturetests",
+      "kymaintegrationbackoffice",
+      "yb2bacceleratorstorefront",
+      "acceleratorservices",
+      "commerceservicesbackoffice",
+      "backofficesolrsearch",
+      "apiregistryservices",
+      "integrationservices",
+      "integrationbackoffice",
+      "personalizationpromotionssmartedit",
+      "personalizationwebservices",
+      "personalizationsearchsmartedit",
+      "personalizationaddon"
+   ],
+   "storefrontAddons":[
+      {
+         "addon":"assistedservicestorefront",
+         "storefront":"yacceleratorstorefront",
+         "template":"yacceleratorstorefront"
+      },
+      {
+         "addon":"smarteditaddon",
+         "storefront":"yacceleratorstorefront",
+         "template":"yacceleratorstorefront"
+      },
+      {
+         "addon":"personalizationaddon",
+         "storefront":"yacceleratorstorefront",
+         "template":"yacceleratorstorefront"
+      },
+      {
+         "addon":"assistedservicestorefront",
+         "storefront":"yb2bacceleratorstorefront",
+         "template":"yb2bacceleratorstorefront"
+      },
+      {
+         "addon":"smarteditaddon",
+         "storefront":"yb2bacceleratorstorefront",
+         "template":"yb2bacceleratorstorefront"
+      }
+   ],
+   "properties":[
+      {
+         "key":"storefront.show.debug.info",
+         "value":"false"
+      },
+      {
+         "key":"promotions.legacy.mode",
+         "value":"true"
+      },
+      {
+         "key":"googleApiKey",
+         "value":""
+      },
+      {
+         "key":"tomcat.http.port",
+         "value":"8081"
+      },
+      {
+         "key":"tomcat.https.port",
+         "value":"8088"
+      },
+      {
+         "key":"tomcat.ssl.port",
+         "value":"8088"
+      },
+      {
+         "key":"corsfilter.default.allowedOrigins",
+         "value":"https://localhost:8088"
+      },
+      {
+         "key":"emailservice.send.enabled",
+         "value":"true"
+      },
+      {
+         "key":"mail.smtp.server",
+         "value":"<your_mail_smtp_sever>"
+      },
+      {
+         "key":"mail.smtp.auth",
+         "value":"true"
+      },
+      {
+         "key":"mail.smtp.sendpartial",
+         "value":"true"
+      },
+      {
+         "key":"mail.smtp.password",
+         "value":"<your_password>"
+      },
+      {
+         "key":"mail.smtp.socketFactory.class",
+         "value":"javax.net.ssl.SSLSocketFactory"
+      },
+      {
+         "key":"mail.smtp.user",
+         "value":"<your_email>"
+      },
+      {
+         "key":"mail.smtp.port",
+         "value":"<your_port>"
+      },
+      {
+         "key":"mail.use.tls",
+         "value":"true"
+      },
+      {
+         "key":"mail.replyto",
+         "value":"<your_email>"
+      },
+      {
+         "key":"default.session.timeout",
+         "value":"3600"
+      }
+   ],
+   "aspects":[
+      {
+         "name":"backoffice",
+         "properties":[
+
+         ],
+         "webapps":[
+            {
+               "name":"hac",
+               "contextPath":"/hac"
+            },
+            {
+               "name":"mediaweb",
+               "contextPath":"/medias"
+            },
+            {
+               "name":"backoffice",
+               "contextPath":"/backoffice"
+            },
+            {
+               "name":"productcockpit",
+               "contextPath":"/productcockpit"
+            },
+            {
+               "name":"cmscockpit",
+               "contextPath":"/cmscockpit"
+            }
+         ]
+      },
+      {
+         "name":"accstorefront",
+         "properties":[
+            {
+               "key":"spring.session.enabled",
+               "value":"true"
+            },
+            {
+               "key":"spring.session.yacceleratorstorefront.save",
+               "value":"async"
+            },
+            {
+               "key":"spring.session.yacceleratorstorefront.cookie.name",
+               "value":"JSESSIONID"
+            },
+            {
+               "key":"spring.session.yacceleratorstorefront.cookie.path",
+               "value":"/yacceleratorstorefront"
+            },
+            {
+               "key":"spring.session.yb2bacceleratorstorefront.save",
+               "value":"async"
+            },
+            {
+               "key":"spring.session.yb2bacceleratorstorefront.cookie.name",
+               "value":"JSESSIONID"
+            },
+            {
+               "key":"spring.session.yb2bacceleratorstorefront.cookie.path",
+               "value":"/yb2bacceleratorstorefront"
+            },
+            {
+               "key":"storefrontContextRoot",
+               "value":"yacceleratorstorefront"
+            },
+            {
+               "key":"storefrontContextRoot",
+               "value":"yb2bacceleratorstorefront"
+            },
+            {
+               "key":"sop.post.url",
+               "value":"/acceleratorservices/sop-mock/process"
+            },
+            {
+               "key":"xss.filter.header.X-Frame-Options",
+               "value":""
+            }
+         ],
+         "webapps":[
+            {
+               "name":"hac",
+               "contextPath":"/hac"
+            },
+            {
+               "name":"mediaweb",
+               "contextPath":"/medias"
+            },
+            {
+               "name":"yacceleratorstorefront",
+               "contextPath":"/yacceleratorstorefront"
+            },
+            {
+               "name":"yb2bacceleratorstorefront",
+               "contextPath":"/yb2bacceleratorstorefront"
+            },
+            {
+               "name":"maintenanceweb",
+               "contextPath":"/maintenance"
+            },
+            {
+               "name":"smartedit",
+               "contextPath":"/smartedit"
+            },
+            {
+               "name":"ycommercewebservices",
+               "contextPath":"/rest"
+            },
+            {
+               "name":"cmssmartedit",
+               "contextPath":"/cmssmartedit"
+            },
+            {
+               "name":"cmssmarteditwebservices",
+               "contextPath":"/cmssmarteditwebservices"
+            },
+            {
+               "name":"cmswebservices",
+               "contextPath":"/cmswebservices"
+            },
+            {
+               "name":"oauth2",
+               "contextPath":"/authorizationserver"
+            },
+            {
+               "name":"odata2webservices",
+               "contextPath":"/odata2webservices"
+            },
+            {
+               "name":"permissionswebservices",
+               "contextPath":"/permissionswebservices"
+            },
+            {
+               "name":"previewwebservices",
+               "contextPath":"/previewwebservices"
+            },
+            {
+               "name":"smarteditwebservices",
+               "contextPath":"/smarteditwebservices"
+            },
+            {
+               "name":"acceleratorservices",
+               "contextPath":"/acceleratorservices"
+            }
+         ]
+      },
+      {
+         "name":"backgroundProcessing",
+         "properties":[
+
+         ],
+         "webapps":[
+            {
+               "name":"hac",
+               "contextPath":"/hac"
+            },
+            {
+               "name":"mediaweb",
+               "contextPath":"/medias"
+            }
+         ]
+      },
+      {
+         "name":"api",
+         "properties":[
+            {
+               "key":"storefrontContextRoot",
+               "value":"yacceleratorstorefront"
+            }
+         ],
+         "webapps":[
+            {
+               "name":"yacceleratorstorefront",
+               "contextPath":"/yacceleratorstorefront"
+            },
+            {
+               "name":"smartedit",
+               "contextPath":"/smartedit"
+            },
+            {
+               "name":"cmssmartedit",
+               "contextPath":"/cmssmartedit"
+            },
+            {
+               "name":"smarteditwebservices",
+               "contextPath":"/smarteditwebservices"
+            },
+            {
+               "name":"cmssmarteditwebservices",
+               "contextPath":"/cmssmarteditwebservices"
+            },
+            {
+               "name":"oauth2",
+               "contextPath":"/authorizationserver"
+            },
+            {
+               "name":"cmswebservices",
+               "contextPath":"/cmswebservices"
+            },
+            {
+               "name":"permissionswebservices",
+               "contextPath":"/permissionswebservices"
+            },
+            {
+               "name":"previewwebservices",
+               "contextPath":"/previewwebservices"
+            },
+            {
+               "name":"mediaweb",
+               "contextPath":"/medias"
+            },
+            {
+               "name":"personalizationsmartedit",
+               "contextPath":"/personalizationsmartedit"
+            },
+            {
+               "name":"personalizationpromotionssmartedit",
+               "contextPath":"/personalizationpromotionssmartedit"
+            },
+            {
+               "name":"personalizationwebservices",
+               "contextPath":"/personalizationwebservices"
+            },
+            {
+               "name":"personalizationsearchsmartedit",
+               "contextPath":"/personalizationsearchsmartedit"
+            }
+         ]
+      }
+   ],
+   "tests":{
+      "extensions":[
+
       ],
-      "webapps": [
-        {
-          "name": "hac",
-          "contextPath": "/hac"
-        },
-        {
-          "name": "mediaweb",
-          "contextPath": "/medias"
-        },
-        {
-          "name": "yacceleratorstorefront",
-          "contextPath": "/yacceleratorstorefront"
-        },
-        {
-          "name": "yb2bacceleratorstorefront",
-          "contextPath": "/yb2bacceleratorstorefront"
-        },
-        {
-          "name": "maintenanceweb",
-          "contextPath": "/maintenance"
-        },
-        {
-          "name": "smartedit",
-          "contextPath": "/smartedit"
-        },
-        {
-          "name": "ycommercewebservices",
-          "contextPath": "/rest"
-        },
-        {
-          "name": "cmssmartedit",
-          "contextPath": "/cmssmartedit"
-        },
-        {
-          "name": "cmssmarteditwebservices",
-          "contextPath": "/cmssmarteditwebservices"
-        },
-        {
-          "name": "cmswebservices",
-          "contextPath": "/cmswebservices"
-        },
-        {
-          "name": "oauth2",
-          "contextPath": "/authorizationserver"
-        },
-        {
-          "name": "odata2webservices",
-          "contextPath": "/odata2webservices"
-        },
-        {
-          "name": "permissionswebservices",
-          "contextPath": "/permissionswebservices"
-        },
-        {
-          "name": "previewwebservices",
-          "contextPath": "/previewwebservices"
-        },
-        {
-          "name": "smarteditwebservices",
-          "contextPath": "/smarteditwebservices"
-        },
-        {
-          "name": "acceleratorservices",
-          "contextPath": "/acceleratorservices"
-        }
+      "annotations":[
+         "UnitTests",
+         "IntegrationTests"
+      ],
+      "packages":[
+         "de.hybris.platform.*"
       ]
-    },
-    {
-      "name": "backgroundProcessing",
-      "properties": [],
-      "webapps": [
-        {
-          "name": "hac",
-          "contextPath": "/hac"
-        },
-        {
-          "name": "mediaweb",
-          "contextPath": "/medias"
-        }
-      ]
-    }
-  ],
-  "tests": {
-    "extensions": [],
-    "annotations": [
-      "UnitTests",
-      "IntegrationTests"
-    ],
-    "packages": [
-      "de.hybris.platform.*"
-    ]
-  }
+   }
 }
