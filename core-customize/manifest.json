@@ -75,7 +75,8 @@
     "backofficesolrsearch",
     "apiregistryservices",
     "integrationservices",
-    "integrationbackoffice"
+    "integrationbackoffice",
+    "npmtestancillary"
   ],
   "storefrontAddons": [
     {
