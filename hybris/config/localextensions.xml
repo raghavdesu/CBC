@@ -71,5 +71,6 @@
     <extension name='odata2webservicesfeaturetests' />
     <extension name='kymaintegrationbackoffice' />
     <extension name='yb2bacceleratorstorefront' />
+    <extension name="npmtestancillary"/>
   </extensions>
 </hybrisconfig>
